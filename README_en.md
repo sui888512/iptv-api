@@ -47,7 +47,7 @@ other features, under development...
 > 1. The default data sources, such as subscription sources, come from open-source projects on GitHub and are for
      demonstration purposes only. They may have stability issues.
 > 2. This project does not guarantee or explain the stability of the interface results.
-> 3. For better stability, it is recommended to maintain your own data sources.
+> 3. To achieve optimal stability, it is recommended to maintain the data sources yourself.
 
 <details>
   <summary>Default Data Sources</summary>
@@ -88,9 +88,9 @@ other features, under development...
 
 > [!IMPORTANT]\
 > The following addresses may fail to be accessed domestically. It is recommended to prepend a proxy address for use.
-> You can reply with "CDN" on the public account to obtain it.
+> The public account can reply with `CDN` to obtain it.
 
-### Interface source
+### Live Sources
 
 - Default
 
@@ -146,6 +146,7 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json
 | open_url_info          | Enable to display interface description information, used to control whether to display interface source, resolution, protocol type and other information, the content after the $ symbol, the playback software uses this information to describe the interface, if some players (such as PotPlayer) do not support parsing and cannot play, you can turn it off                                                                | False             |
 | open_use_cache         | Enable the use of local cache data, applicable to the query request failure scenario (only for hotel sources and multicast sources)                                                                                                                                                                                                                                                                                              | True              |
 | open_history           | Enable the use of historical update results (including the interface for template and result files) and merge them into the current update                                                                                                                                                                                                                                                                                       | True              |
+| open_headers           | Enable to use the request header verification information contained in M3U, used for speed measurement and other operations. Note: Only a few players support playing this type of interface with verification information, which is turned off by default                                                                                                                                                                       | False             |
 | app_port               | Page service port, used to control the port number of the page service                                                                                                                                                                                                                                                                                                                                                           | 8000              |
 | cdn_url                | CDN proxy acceleration address, used for accelerated access to subscription sources, channel icons and other resources                                                                                                                                                                                                                                                                                                           |                   |
 | final_file             | Generated result file path                                                                                                                                                                                                                                                                                                                                                                                                       | output/result.txt |
