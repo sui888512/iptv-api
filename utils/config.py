@@ -2,6 +2,7 @@ import configparser
 import os
 import re
 import shutil
+import socket
 import sys
 
 
@@ -74,12 +75,12 @@ class ConfigManager:
 
     @property
     def ipv_type(self):
-        return self.config.get("Settings", "ipv_type", fallback="全部").lower()
+        return self.config.get("Settings", "ipv_type", fallback="all").lower()
 
     @property
     def open_ipv6(self):
         return (
-                "ipv6" in self.ipv_type or "all" in self.ipv_type or "全部" in self.ipv_type
+                "ipv6" in self.ipv_type or "all" in self.ipv_type
         )
 
     @property
@@ -267,7 +268,7 @@ class ConfigManager:
         return [
             region.strip()
             for region in self.config.get(
-                "Settings", "multicast_region_list", fallback="全部"
+                "Settings", "multicast_region_list", fallback="all"
             ).split(",")
             if region.strip()
         ]
@@ -277,7 +278,7 @@ class ConfigManager:
         return [
             region.strip()
             for region in self.config.get(
-                "Settings", "hotel_region_list", fallback="全部"
+                "Settings", "hotel_region_list", fallback="all"
             ).split(",")
             if region.strip()
         ]
@@ -313,12 +314,16 @@ class ConfigManager:
         return self.config.getboolean("Settings", "open_empty_category", fallback=True)
 
     @property
-    def app_host(self):
-        return os.getenv("APP_HOST") or self.config.get("Settings", "app_host", fallback="http://localhost")
+    def app_port(self):
+        return self.config.getint("Settings", "app_port", fallback=5180)
 
     @property
-    def app_port(self):
-        return os.getenv("APP_PORT") or self.config.getint("Settings", "app_port", fallback=8000)
+    def nginx_http_port(self):
+        return self.config.getint("Settings", "nginx_http_port", fallback=8080)
+
+    @property
+    def nginx_rtmp_port(self):
+        return self.config.getint("Settings", "nginx_rtmp_port", fallback=1935)
 
     @property
     def open_supply(self):
@@ -389,8 +394,20 @@ class ConfigManager:
         ]
 
     @property
+    def update_mode(self):
+        return self.config.get("Settings", "update_mode", fallback="interval")
+
+    @property
     def update_interval(self):
         return self.config.getfloat("Settings", "update_interval", fallback=12)
+
+    @property
+    def update_times(self):
+        return self.config.get("Settings", "update_times", fallback="")
+
+    @property
+    def update_startup(self):
+        return self.config.getboolean("Settings", "update_startup", fallback=True)
 
     @property
     def logo_url(self):
@@ -399,6 +416,40 @@ class ConfigManager:
     @property
     def logo_type(self):
         return self.config.get("Settings", "logo_type", fallback="png")
+
+    @property
+    def rtmp_idle_timeout(self):
+        return self.config.getint("Settings", "rtmp_idle_timeout", fallback=60)
+
+    @property
+    def rtmp_max_streams(self):
+        return self.config.getint("Settings", "rtmp_max_streams", fallback=10)
+
+    @property
+    def public_scheme(self):
+        return self.config.get("Settings", "public_scheme", fallback="http") or "http"
+
+    @property
+    def public_domain(self):
+        cfg = self.config.get("Settings", "public_domain", fallback="127.0.0.1")
+        if cfg and cfg != "127.0.0.1":
+            return cfg
+        try:
+            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            try:
+                s.connect(("8.8.8.8", 80))
+                ip = s.getsockname()[0]
+            finally:
+                s.close()
+            if ip and not ip.startswith("127."):
+                return ip
+        except Exception:
+            pass
+        return cfg
+
+    @property
+    def language(self):
+        return self.config.get("Settings", "language", fallback="zh_CN")
 
     def load(self):
         """
@@ -418,9 +469,13 @@ class ConfigManager:
     def override_config_with_env(self):
         for section in self.config.sections():
             for key in self.config[section]:
-                env_val = os.getenv(key)
-                if env_val is not None:
-                    self.config.set(section, key, env_val)
+                section_key = f"{section}_{key}"
+                candidates = (key, key.upper(), section_key, section_key.upper())
+                for env_name in candidates:
+                    env_val = os.getenv(env_name)
+                    if env_val is not None:
+                        self.config.set(section, key, env_val)
+                        break
 
     def set(self, section, key, value):
         """

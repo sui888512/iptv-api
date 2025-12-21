@@ -2,7 +2,12 @@
 
 [English](./tutorial_en.md) | 中文
 
-IPTV-API是一个可高度自定义的IPTV接口更新项目📺，自定义频道菜单，自动获取直播源，测速验效后生成可用的结果，可实现『✨秒播级体验🚀』
+<div align="center">
+  <img src="../static/images/logo.png" alt="logo"/>
+  <h1 align="center">IPTV-API</h1>
+</div>
+
+📺IPTV直播源自动更新平台，『🤖全自动采集、筛选、测速、生成流程🚀』，支持丰富的个性化配置，将结果地址输入播放器即可观看
 
 以下一共4种安装运行方式，选择一种适合您的即可
 
@@ -279,46 +284,59 @@ pipenv run ui
 
 ## Docker
 
-### 1. 拉取镜像
+### Compose一键部署
+
+[docker-compose.yml](../docker-compose.yml)
+
+```bash
+docker compose up -d
+```
+
+### 手动命令部署
+
+#### 1. 拉取镜像
 
 ```bash
 docker pull guovern/iptv-api:latest
 ```
 
-🚀 代理加速（推荐国内用户使用）：
+🚀 代理加速（推荐国内用户使用，可能会有缓存）：
 
 ```bash
 docker pull docker.1ms.run/guovern/iptv-api:latest
 ```
 
-### 2. 运行容器
+#### 2. 运行容器
 
 ```bash
-docker run -d -p 8000:8000 guovern/iptv-api
+docker run -d -p 5180:5180 guovern/iptv-api
 ```
 
-#### 挂载（推荐）：
+**环境变量：**
 
-实现宿主机文件与容器文件同步，修改模板、配置、获取更新结果文件可直接在宿主机文件夹下操作
+| 变量              | 描述             | 默认值  |
+|:----------------|:---------------|:-----|
+| APP_PORT        | 服务端口           | 5180 |
+| NGINX_HTTP_PORT | Nginx HTTP服务端口 | 8080 |
+| NGINX_RTMP_PORT | Nginx RTMP服务端口 | 1935 |
 
-以宿主机路径/etc/docker 为例：
+除了以上环境变量，还支持通过环境变量覆盖配置文件中的[配置项](../docs/config.md)
+
+**挂载：** 实现宿主机文件与容器文件同步，修改模板、配置、获取更新结果文件可直接在宿主机文件夹下操作，在上述运行命令后添加以下参数
+
+挂载配置目录：
 
 ```bash
--v /etc/docker/config:/iptv-api/config
--v /etc/docker/output:/iptv-api/output
+-v /iptv-api/config:/iptv-api/config
 ```
 
-> [!WARNING]\
-> 如果重新拉取镜像进行更新版本后，涉及到配置文件变更或增加新配置时，务必覆盖主机的旧配置文件（config目录），因为主机的配置文件是无法自动更新的，否则容器还是以旧配置运行。
+挂载结果目录：
 
-#### 环境变量：
+```bash
+-v /iptv-api/output:/iptv-api/output
+```
 
-| 变量       | 描述       | 默认值                |
-|:---------|:---------|:-------------------|
-| APP_HOST | 服务host地址 | "http://localhost" |
-| APP_PORT | 服务端口     | 8000               |
-
-### 3. 更新结果
+#### 3. 更新结果
 
 | 接口              | 描述          |
 |:----------------|:------------|
@@ -337,27 +355,22 @@ docker run -d -p 8000:8000 guovern/iptv-api
 | /log/statistic  | 统计结果的日志     |
 | /log/nomatch    | 未匹配频道的日志    |
 
-- RTMP 推流：
+**RTMP 推流：**
 
 > [!NOTE]
-> 1. 如果需要对本地视频源进行推流，可在`config`目录下新建`live`或`hls`（推荐）文件夹
-> 2. live文件夹用于推流live接口，hls文件夹用于推流hls接口
+> 1. 开启推流后，默认会将获取到的接口（如订阅源）进行推流
+> 2. 如果需要对本地视频源进行推流，可在`config`目录下新建`hls`文件夹
 > 3. 将以`频道名称命名`的视频文件放入其中，程序会自动推流到对应的频道中
-> 4. 可访问 http://localhost:8080/stat 查看实时推流状态统计数据
+> 4. 可访问 http://127.0.0.1:8080/stat 查看实时推流状态统计数据
 
-| 推流接口           | 描述                |
-|:---------------|:------------------|
-| /live          | 推流live接口          |
-| /hls           | 推流hls接口           |
-| /live/txt      | 推流live txt接口      |
-| /hls/txt       | 推流hls txt接口       |
-| /live/m3u      | 推流live m3u接口      |
-| /hls/m3u       | 推流hls m3u接口       |
-| /live/ipv4/txt | 推流live ipv4 txt接口 |
-| /hls/ipv4/txt  | 推流hls ipv4 txt接口  |
-| /live/ipv4/m3u | 推流live ipv4 m3u接口 |
-| /hls/ipv4/m3u  | 推流hls ipv4 m3u接口  |
-| /live/ipv6/txt | 推流live ipv6 txt接口 |
-| /hls/ipv6/txt  | 推流hls ipv6 txt接口  |
-| /live/ipv6/m3u | 推流live ipv6 m3u接口 |
-| /hls/ipv6/m3u  | 推流hls ipv6 m3u接口  |
+| 推流接口          | 描述           |
+|:--------------|:-------------|
+| /hls          | 推流接口         |
+| /hls/txt      | 推流txt接口      |
+| /hls/m3u      | 推流m3u接口      |
+| /hls/ipv4     | 推流ipv4 默认接口  |
+| /hls/ipv6     | 推流ipv6 默认接口  |
+| /hls/ipv4/txt | 推流ipv4 txt接口 |
+| /hls/ipv4/m3u | 推流ipv4 m3u接口 |
+| /hls/ipv6/txt | 推流ipv6 txt接口 |
+| /hls/ipv6/m3u | 推流ipv6 m3u接口 |

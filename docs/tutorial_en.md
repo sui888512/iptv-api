@@ -2,9 +2,13 @@
 
 [中文](./tutorial.md) | English
 
-IPTV-API is a highly customizable IPTV interface update project 📺, allowing you to customize channel menus,
-automatically obtain live sources, and generate available results after speed testing and validation, achieving a 『✨
-instant playback experience 🚀』.
+<div align="center">
+  <img src="../static/images/logo.png" alt="logo"/>
+  <h1 align="center">IPTV-API</h1>
+</div>
+
+📺 IPTV live-source auto-update platform — 🤖 fully automated collection, filtering, speed-testing, and generation
+pipeline 🚀. Supports extensive customization; paste the resulting URL into your player to watch
 
 There are four installation and operation methods in total, choose the one that suits you.
 
@@ -109,7 +113,7 @@ Like editing templates, modify the runtime configuration.
 ![Edit source_file configuration](./images/edit-user-source-file.png 'Edit source_file configuration')
 
 Adjust the configuration as needed, here is the default configuration description:
-[Configuration parameters](./config.md)
+[Configuration parameters](./config_en.md)
 
 > [!NOTE]
 > 1. For enabling interface information display, since some players (such as `PotPlayer`) do not support parsing
@@ -320,50 +324,62 @@ If you do not understand the software configuration options, do not change anyth
 
 ## Docker
 
-### 1. Pull the image
+### One‑click deployment with Compose
+
+[docker-compose.yml](../docker-compose.yml)
+
+```bash
+docker compose up -d
+```
+
+### Manual deployment with commands
+
+#### 1. Pull the image
 
 ```bash
 docker pull guovern/iptv-api:latest
 ```
 
-🚀 Proxy acceleration (recommended for users in China):
+🚀 Proxy acceleration (recommended for users in China, may be cached):
 
 ```bash
 docker pull docker.1ms.run/guovern/iptv-api:latest
 ```
 
-### 2. Run the container
+#### 2. Run the container
 
 ```bash
-docker run -d -p 8000:8000 guovern/iptv-api
+docker run -d -p 5180:5180 guovern/iptv-api
 ```
 
-#### Mount (recommended):
+**Environment Variables:**
 
-This allows synchronization of files between the host machine and the container. Modifying templates, configurations,
-and retrieving updated result files can be directly operated in the host machine's folder.
+| Variable        | Description             | Default Value |
+|:----------------|:------------------------|:--------------|
+| APP_PORT        | Service port            | 5180          |
+| NGINX_HTTP_PORT | Nginx HTTP service port | 8080          |
+| NGINX_RTMP_PORT | Nginx RTMP service port | 1935          |
 
-Taking the host path /etc/docker as an example:
+In addition to the environment variables listed above, you can also override
+the [configuration items](../docs/config_en.md) in the
+configuration file via environment variables.
+
+**Mounts:** used to synchronize files between the host and the container. You can edit templates, configs, and access
+generated result files directly on the host. Append the following options to the run command above:
+
+Mount config directory:
 
 ```bash
--v /etc/docker/config:/iptv-api/config
--v /etc/docker/output:/iptv-api/output
+-v /iptv-api/config:/iptv-api/config
 ```
 
-> [!WARNING]\
-> If you pull the image again to update the version, and there are changes or additions to the configuration files, be
-> sure to overwrite the old configuration files in the host (config directory), as the host configuration files cannot
-> be
-> updated automatically. Otherwise, the container will still run with the old configuration.
+Mount output directory:
 
-#### Environment Variables:
+```bash
+-v /iptv-api/output:/iptv-api/output
+```
 
-| Variable | Description          | Default Value      |
-|:---------|:---------------------|:-------------------|
-| APP_HOST | Service host address | "http://localhost" |
-| APP_PORT | Service port         | 8000               |
-
-### 3. Update Results
+#### 3. Update Results
 
 | Endpoint        | Description                                     |
 |:----------------|:------------------------------------------------|
@@ -382,28 +398,23 @@ Taking the host path /etc/docker as an example:
 | /log/statistic  | Log of statistics results                       |
 | /log/nomatch    | Log of unmatched channels                       |
 
-- RTMP Streaming:
+**RTMP Streaming:**
 
 > [!NOTE]
-> 1. To stream local video sources, create a `live` or `hls` (recommended) folder in the `config` directory.
-> 2. The `live` folder is used for live streaming interfaces, and the `hls` folder is used for HLS streaming interfaces.
-> 3. Place video files named after the `channel name` into these folders, and the program will automatically stream them
-     to the corresponding channels.
-> 4. Visit http://localhost:8080/stat to view real-time streaming status statistics.
+> 1. After enabling streaming, obtained sources (for example subscription sources) will be streamed by default.
+> 2. To stream local video sources, create an `hls` folder inside the `config` directory.
+> 3. Place video files named with the `channel name` into that folder; the program will automatically stream them to the
+     corresponding channels.
+> 4. Visit `http://127.0.0.1:8080/stat` to view real-time streaming status and statistics.
 
-| Streaming Endpoint | Description                      |
-|:-------------------|:---------------------------------|
-| /live              | live streaming endpoint          |
-| /hls               | hls streaming endpoint           |
-| /live/txt          | live txt streaming endpoint      |
-| /hls/txt           | hls txt streaming endpoint       |
-| /live/m3u          | live m3u streaming endpoint      |
-| /hls/m3u           | hls m3u streaming endpoint       |
-| /live/ipv4/txt     | live ipv4 txt streaming endpoint |
-| /hls/ipv4/txt      | hls ipv4 txt streaming endpoint  |
-| /live/ipv4/m3u     | live ipv4 m3u streaming endpoint |
-| /hls/ipv4/m3u      | hls ipv4 m3u streaming endpoint  |
-| /live/ipv6/txt     | live ipv6 txt streaming endpoint |
-| /hls/ipv6/txt      | hls ipv6 txt streaming endpoint  |
-| /live/ipv6/m3u     | live ipv6 m3u streaming endpoint |
-| /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint  |
+| Streaming Endpoint | Description                         |
+|:-------------------|:------------------------------------|
+| /hls               | hls streaming endpoint              |
+| /hls/txt           | hls txt streaming endpoint          |
+| /hls/m3u           | hls m3u streaming endpoint          |
+| /hls/ipv4          | hls ipv4 default streaming endpoint |
+| /hls/ipv6          | hls ipv6 default streaming endpoint |
+| /hls/ipv4/txt      | hls ipv4 txt streaming endpoint     |
+| /hls/ipv4/m3u      | hls ipv4 m3u streaming endpoint     |
+| /hls/ipv6/txt      | hls ipv6 txt streaming endpoint     |
+| /hls/ipv6/m3u      | hls ipv6 m3u streaming endpoint     |

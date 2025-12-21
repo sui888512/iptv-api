@@ -1,3 +1,4 @@
+import copy
 import datetime
 import json
 import logging
@@ -18,6 +19,7 @@ from opencc import OpenCC
 
 import utils.constants as constants
 from utils.config import config, resource_path
+from utils.i18n import t
 from utils.types import ChannelData
 
 opencc_t2s = OpenCC("t2s")
@@ -27,13 +29,38 @@ def get_logger(path, level=logging.ERROR, init=False):
     """
     get the logger
     """
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+    dir_name = os.path.dirname(path) or "."
+    os.makedirs(dir_name, exist_ok=True)
     os.makedirs(constants.output_dir, exist_ok=True)
-    if init and os.path.exists(path):
-        os.remove(path)
-    handler = RotatingFileHandler(path, encoding="utf-8")
+
     logger = logging.getLogger(path)
-    logger.addHandler(handler)
+
+    if init:
+        for h in logger.handlers[:]:
+            try:
+                logger.removeHandler(h)
+                h.close()
+            except Exception:
+                pass
+
+        if os.path.exists(path):
+            try:
+                with open(path, "w", encoding="utf-8"):
+                    pass
+            except PermissionError:
+                pass
+            except Exception:
+                pass
+
+    handler = RotatingFileHandler(path, encoding="utf-8", delay=True)
+
+    abs_path = os.path.abspath(path)
+    if not any(
+            isinstance(h, RotatingFileHandler) and getattr(h, "baseFilename", None) == abs_path
+            for h in logger.handlers
+    ):
+        logger.addHandler(handler)
+
     logger.setLevel(level)
     return logger
 
@@ -174,7 +201,7 @@ def get_total_urls(info_list: list[ChannelData], ipv_type_prefer, origin_type_pr
         if not origin:
             continue
 
-        if origin in ["live", "hls"]:
+        if origin == "hls":
             if not rtmp_type or (rtmp_type and origin in rtmp_type):
                 total_urls.append(info)
                 continue
@@ -248,14 +275,14 @@ def check_ipv6_support():
         return False
     url = "https://ipv6.tokyo.test-ipv6.com/ip/?callback=?&testdomain=test-ipv6.com&testname=test_aaaa"
     try:
-        print("Checking if your network supports IPv6...")
+        print(t("msg.check_ipv6_support"))
         response = requests.get(url, timeout=10)
         if response.status_code == 200:
-            print("Your network supports IPv6")
+            print(t("msg.ipv6_supported"))
             return True
     except Exception:
         pass
-    print("Your network does not support IPv6, don't worry, the IPv6 results will be saved")
+    print(t("msg.ipv6_not_supported"))
     return False
 
 
@@ -264,11 +291,7 @@ def check_ipv_type_match(ipv_type: str) -> bool:
     Check if the ipv type matches
     """
     config_ipv_type = config.ipv_type
-    return (
-            config_ipv_type == ipv_type
-            or config_ipv_type == "全部"
-            or config_ipv_type == "all"
-    )
+    return config_ipv_type == ipv_type or config_ipv_type == "all"
 
 
 def check_url_by_keywords(url, keywords=None):
@@ -276,58 +299,90 @@ def check_url_by_keywords(url, keywords=None):
     Check by URL keywords
     """
     if not keywords:
-        return True
+        return False
     else:
         return any(keyword in url for keyword in keywords)
 
 
 def merge_objects(*objects, match_key=None):
     """
-    Merge objects
-
+    Merge objects while preserving defaultdict types (including default_factory).
     Args:
         *objects: Dictionaries to merge
         match_key: If dict1[key] is a list of dicts, this key will be used to match and merge dicts
     """
+
+    def clone_empty(value):
+        """
+        Return an empty container of the same *container* type as value,
+        preserving defaultdict default_factory when applicable.
+        """
+        if isinstance(value, defaultdict):
+            return defaultdict(value.default_factory)
+        if isinstance(value, dict):
+            return {}
+        if isinstance(value, list):
+            return []
+        if isinstance(value, set):
+            return set()
+        try:
+            return copy.copy(value)
+        except Exception:
+            return value
 
     def merge_dicts(dict1, dict2):
         for key, value in dict2.items():
             if key in dict1:
                 if isinstance(dict1[key], dict) and isinstance(value, dict):
                     merge_dicts(dict1[key], value)
-                elif isinstance(dict1[key], set):
+                elif isinstance(dict1[key], set) and isinstance(value, (set, list)):
                     dict1[key].update(value)
                 elif isinstance(dict1[key], list) and isinstance(value, list):
                     if match_key and all(isinstance(x, dict) for x in dict1[key] + value):
-                        existing_items = {item[match_key]: item for item in dict1[key]}
+                        existing_items = {item.get(match_key): item for item in dict1[key] if match_key in item}
                         for new_item in value:
                             if match_key in new_item and new_item[match_key] in existing_items:
                                 merge_dicts(existing_items[new_item[match_key]], new_item)
                             else:
                                 dict1[key].append(new_item)
                     else:
-                        dict1[key].extend(x for x in value if x not in dict1[key])
+                        for x in value:
+                            if x not in dict1[key]:
+                                dict1[key].append(x)
                 elif value != dict1[key]:
-                    dict1[key] = value
+                    dict1[key] = copy.deepcopy(value)
             else:
-                dict1[key] = value
+                if isinstance(value, dict):
+                    dict1[key] = clone_empty(value)
+                    merge_dicts(dict1[key], value)
+                else:
+                    dict1[key] = copy.deepcopy(value)
 
-    merged_dict = {}
+    if not objects:
+        return {}
+
     for obj in objects:
         if not isinstance(obj, dict):
             raise TypeError("All input objects must be dictionaries")
+
+    first_obj = objects[0]
+    if isinstance(first_obj, defaultdict):
+        merged_dict = defaultdict(first_obj.default_factory)
+    else:
+        merged_dict = {}
+
+    for obj in objects:
         merge_dicts(merged_dict, obj)
 
     return merged_dict
 
 
-def get_ip_address():
-    """
-    Get the IP address
-    """
-    host = os.getenv("APP_HOST", config.app_host)
-    port = os.getenv("APP_PORT", config.app_port)
-    return f"{host}:{port}"
+def get_public_url(port: int = config.app_port) -> str:
+    host = config.public_domain
+    scheme = config.public_scheme
+    default_port = 80 if scheme == 'http' else 443
+    port_part = f":{port}" if port != default_port else ""
+    return f"{scheme}://{host}{port_part}"
 
 
 def get_epg_url():
@@ -339,7 +394,7 @@ def get_epg_url():
         ref = os.getenv("GITHUB_REF", "gd")
         return join_url(config.cdn_url, f"https://raw.githubusercontent.com/{repository}/{ref}/output/epg/epg.gz")
     else:
-        return f"{get_ip_address()}/epg/epg.gz"
+        return f"{get_public_url()}/epg/epg.gz"
 
 
 def convert_to_m3u(path=None, first_channel_name=None, data=None):
@@ -368,7 +423,7 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
                             r"(CCTV|CETV)-(\d+)(\+.*)?",
                             lambda m: f"{m.group(1)}{m.group(2)}"
                                       + ("+" if m.group(3) else ""),
-                            first_channel_name if current_group == "🕘️更新时间" else original_channel_name,
+                            first_channel_name if current_group == t("content.update_time") else original_channel_name,
                         )
                         m3u_output += f'#EXTINF:-1 tvg-name="{processed_channel_name}" tvg-logo="{join_url(logo_url, f'{processed_channel_name}.{config.logo_type}')}"'
                         if current_group:
@@ -395,7 +450,6 @@ def convert_to_m3u(path=None, first_channel_name=None, data=None):
             m3u_file_path = os.path.splitext(path)[0] + ".m3u"
             with open(m3u_file_path, "w", encoding="utf-8") as m3u_file:
                 m3u_file.write(m3u_output)
-            # print(f"✅ M3U result file generated at: {m3u_file_path}")
 
 
 def get_result_file_content(path=None, show_content=False, file_type=None):
@@ -428,7 +482,7 @@ def remove_duplicates_from_list(data_list, seen, filter_host=False, ipv6_support
     """
     unique_list = []
     for item in data_list:
-        if item["origin"] in ["whitelist", "live", "hls"]:
+        if item["origin"] in ["whitelist", "hls"]:
             continue
         if not ipv6_support and item["ipv_type"] == "ipv6":
             continue
@@ -549,22 +603,22 @@ def get_headers_key_value(content: str) -> dict:
     return key_value
 
 
-def get_name_url(content, pattern, open_headers=False, check_url=True):
+def get_name_value(content, pattern, open_headers=False, check_value=True):
     """
-    Extract name and URL from content using a regex pattern.
+    Extract name and value from content using a regex pattern.
     :param content: str, the input content to search.
     :param pattern: re.Pattern, the compiled regex pattern to match.
     :param open_headers: bool, whether to extract headers.
-    :param check_url: bool, whether to validate the presence of a URL.
+    :param check_value: bool, whether to validate the presence of a URL.
     """
     result = []
     for match in pattern.finditer(content):
         group_dict = match.groupdict()
         name = (group_dict.get("name", "") or "").strip()
-        url = (group_dict.get("url", "") or "").strip()
-        if not name or (check_url and not url):
+        value = (group_dict.get("value", "") or "").strip()
+        if not name or (check_value and not value):
             continue
-        data = {"name": name, "url": url}
+        data = {"name": name, "value": value}
         attributes = {**get_headers_key_value(group_dict.get("attributes", "")),
                       **get_headers_key_value(group_dict.get("options", ""))}
         headers = {
@@ -630,10 +684,10 @@ def get_name_urls_from_file(path: str, format_name_flag: bool = False) -> dict[s
                 line = line.strip()
                 if line.startswith("#"):
                     continue
-                name_url = get_name_url(line, pattern=constants.txt_pattern)
-                if name_url and name_url[0]:
-                    name = format_name(name_url[0]["name"]) if format_name_flag else name_url[0]["name"]
-                    url = name_url[0]["url"]
+                name_value = get_name_value(line, pattern=constants.txt_pattern)
+                if name_value and name_value[0]:
+                    name = format_name(name_value[0]["name"]) if format_name_flag else name_value[0]["name"]
+                    url = name_value[0]["value"]
                     if url not in name_urls[name]:
                         name_urls[name].append(url)
     return name_urls
@@ -756,3 +810,38 @@ def get_urls_len(data) -> int:
         for url_info in url_info_list
     )
     return len(urls)
+
+
+def render_nginx_conf(nginx_conf_template, nginx_conf):
+    """
+    Render the nginx conf file
+    """
+
+    with open(nginx_conf_template, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    content = content.replace('${APP_PORT}', str(config.app_port))
+    content = content.replace('${NGINX_HTTP_PORT}', str(config.nginx_http_port))
+    content = content.replace('${NGINX_RTMP_PORT}', str(config.nginx_rtmp_port))
+
+    with open(nginx_conf, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+
+def parse_times(times_str: str):
+    """
+    Parse times from a string in the format "HH:MM, HH:MM, ..."
+    """
+    times = []
+    for part in (times_str or "").split(","):
+        part = part.strip()
+        if not part:
+            continue
+        try:
+            hh_mm = part.split(":")
+            h = int(hh_mm[0])
+            m = int(hh_mm[1]) if len(hh_mm) > 1 else 0
+            times.append((h, m))
+        except Exception:
+            continue
+    return times
