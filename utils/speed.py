@@ -27,6 +27,7 @@ max_resolution_value = config.max_resolution_value
 open_supply = config.open_supply
 open_filter_speed = config.open_filter_speed
 min_speed_value = config.min_speed
+resolution_speed_map = config.resolution_speed_map
 m3u8_headers = ['application/x-mpegurl', 'application/vnd.apple.mpegurl', 'audio/mpegurl', 'audio/x-mpegurl']
 default_ipv6_delay = 0.1
 default_ipv6_resolution = "1920x1080"
@@ -36,21 +37,30 @@ default_ipv6_result = {
     'resolution': default_ipv6_resolution
 }
 
+min_measure_time = 1.0
+stability_window = 4
+stability_threshold = 0.12
+
 
 async def get_speed_with_download(url: str, headers: dict = None, session: ClientSession = None,
-                                  timeout: int = speed_test_timeout) -> dict[
-    str, float | None]:
+                                  timeout: int = speed_test_timeout) -> dict[str, float | None]:
     """
     Get the speed of the url with a total timeout
     """
     start_time = time()
     delay = -1
     total_size = 0
+    min_bytes = 64 * 1024
+    last_sample_time = start_time
+    last_sample_size = 0
+
     if session is None:
         session = ClientSession(connector=TCPConnector(ssl=False), trust_env=True)
         created_session = True
     else:
         created_session = False
+
+    speed_samples: list[float] = []
     try:
         async with session.get(url, headers=headers, timeout=timeout) as response:
             if response.status != 200:
@@ -59,14 +69,36 @@ async def get_speed_with_download(url: str, headers: dict = None, session: Clien
             async for chunk in response.content.iter_any():
                 if chunk:
                     total_size += len(chunk)
+                    now = time()
+                    elapsed = now - start_time
+                    delta_t = now - last_sample_time
+                    delta_b = total_size - last_sample_size
+                    if delta_t > 0 and delta_b > 0:
+                        inst_speed = delta_b / delta_t / 1024.0 / 1024.0
+                        speed_samples.append(inst_speed)
+                        last_sample_time = now
+                        last_sample_size = total_size
+                    if (elapsed >= min_measure_time and total_size >= min_bytes
+                            and len(speed_samples) >= stability_window):
+                        window = speed_samples[-stability_window:]
+                        mean = sum(window) / len(window)
+                        if mean > 0 and (max(window) - min(window)) / mean < stability_threshold:
+                            total_time = elapsed
+                            return {
+                                'speed': total_size / total_time / 1024 / 1024,
+                                'delay': delay,
+                                'size': total_size,
+                                'time': total_time,
+                            }
     except:
         pass
     finally:
         total_time = time() - start_time
         if created_session:
             await session.close()
+        speed_value = total_size / total_time / 1024 / 1024 if total_time > 0 else 0.0
         return {
-            'speed': total_size / total_time / 1024 / 1024,
+            'speed': speed_value,
             'delay': delay,
             'size': total_size,
             'time': total_time,
@@ -326,7 +358,7 @@ def check_ffmpeg_installed_status():
         return status
 
 
-async def ffmpeg_url(url, headers=None, timeout=10):
+async def ffmpeg_url(url, headers=None, timeout=speed_test_timeout):
     """
     Get the ffmpeg output of the url
     """
@@ -338,27 +370,96 @@ async def ffmpeg_url(url, headers=None, timeout=10):
     args += ["-http_persistent", "0", "-stats", "-i", url, "-f", "null", "-"]
 
     proc = None
+    stderr_parts: list[bytes] = []
+    speed_samples: list[float] = []
+    bitrate_re = re.compile(r"bitrate=\s*([0-9\.]+)\s*k?bits/s", re.IGNORECASE)
+    start = time()
+
     try:
         proc = await asyncio.create_subprocess_exec(
             *args, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
         )
-        out, err = await asyncio.wait_for(proc.communicate(), timeout=timeout)
-        if err:
-            return err.decode(errors="ignore")
-        if out:
-            return out.decode(errors="ignore")
-        return None
+
+        while True:
+            try:
+                line = await asyncio.wait_for(proc.stderr.readline(), timeout=0.5)
+            except asyncio.TimeoutError:
+                line = b''
+            now = time()
+            elapsed = now - start
+
+            if line == b'':
+                if proc.returncode is None:
+                    if elapsed >= timeout:
+                        proc.kill()
+                        await proc.wait()
+                        break
+                    await asyncio.sleep(0)
+                    if proc.returncode is not None:
+                        break
+                    continue
+                else:
+                    break
+
+            stderr_parts.append(line)
+
+            try:
+                text = line.decode(errors="ignore")
+            except Exception:
+                text = ""
+
+            m = bitrate_re.search(text)
+            if m:
+                try:
+                    kbps = float(m.group(1))
+                    mbps = kbps / 8.0 / 1024.0
+                    speed_samples.append(mbps)
+                except Exception:
+                    pass
+
+            if elapsed >= min_measure_time and len(speed_samples) >= stability_window:
+                window = speed_samples[-stability_window:]
+                mean = sum(window) / len(window)
+                if mean > 0 and (max(window) - min(window)) / mean < stability_threshold:
+                    try:
+                        proc.kill()
+                    except Exception:
+                        pass
+                    await proc.wait()
+                    break
+
+        try:
+            out, err = await asyncio.wait_for(proc.communicate(), timeout=1)
+            if err:
+                stderr_parts.append(err)
+            if out:
+                stderr_parts.append(out)
+        except Exception:
+            try:
+                proc.kill()
+            except Exception:
+                pass
+            await proc.wait()
     except asyncio.TimeoutError:
         if proc:
-            proc.kill()
-        return None
+            try:
+                proc.kill()
+            except Exception:
+                pass
+            await proc.wait()
     except Exception:
         if proc:
-            proc.kill()
-        return None
-    finally:
-        if proc:
+            try:
+                proc.kill()
+            except Exception:
+                pass
             await proc.wait()
+    finally:
+        stderr_bytes = b"".join(stderr_parts)
+        try:
+            return stderr_bytes.decode(errors="ignore")
+        except Exception:
+            return None
 
 
 async def get_resolution_ffprobe(url: str, headers: dict = None, timeout: int = speed_test_timeout) -> str | None:
@@ -477,8 +578,10 @@ async def get_speed(data, headers=None, ipv6_proxy=None, filter_resolution=open_
         if callback:
             callback()
         if logger:
+            origin = data.get('origin')
+            origin_name = t(f"name.{origin}") if origin else origin
             logger.info(
-                f"Name: {data.get('name')}, URL: {data.get('url')}, From: {data.get('origin')}, IPv_Type: {data.get("ipv_type")}, Location: {data.get('location')}, ISP: {data.get('isp')}, Date: {data["date"]}, Delay: {result.get('delay') or -1} ms, Speed: {result.get('speed') or 0:.2f} M/s, Resolution: {result.get('resolution')}"
+                f"{t("name.name")}: {data.get('name')}, {t("pbar.url")}: {data.get('url')}, {t("name.from")}: {origin_name}, {t("name.ipv_type")}: {data.get("ipv_type")}, {t("name.location")}: {data.get('location')}, {t("name.isp")}: {data.get('isp')}, {t("name.date")}: {data["date"]}, {t("name.delay")}: {result.get('delay') or -1} ms, {t("name.speed")}: {result.get('speed') or 0:.2f} M/s, {t("name.resolution")}: {result.get('resolution')}"
             )
         return result
 
@@ -508,7 +611,7 @@ def get_sort_result(
         if result_delay == -1:
             continue
         if not supply:
-            if filter_speed and result_speed < min_speed:
+            if filter_speed and result_speed < resolution_speed_map.get(resolution, min_speed):
                 continue
             if filter_resolution and resolution:
                 resolution_value = get_resolution_value(resolution)
