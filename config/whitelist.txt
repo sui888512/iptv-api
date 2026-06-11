@@ -6,6 +6,15 @@
 # If the channel name is not filled in, the address will be added to the results of all channels, with multiple records entered on new lines.
 
 
+香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8$!
+凤凰香港,http://rihou.cc:555/tv/[Pd]凤凰香港$!
+
+
+
+王者荣耀,https://live.ottiptv.cc/huya/660002$!
+英雄联盟,https://live.ottiptv.cc/huya/660000$!
+和平精英,https://live.ottiptv.cc/huya/660006$!
+穿越火线,https://live.ottiptv.cc/huya/660101$!
 
 
 
