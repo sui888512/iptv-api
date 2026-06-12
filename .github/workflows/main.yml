@@ -1,32 +1,25 @@
 name: 'Update schedule'
 
-# ⚠️注意：请不要在 fork 的仓库中添加 `on: schedule` 定时任务（cron）。
-# Forks 可能被大量复制并触发定时执行，当前 GitHub Actions 资源使用已接近上限，
-# 大量 fork 的定时任务可能导致工作流被禁用。若需要定时执行，请使用其它部署方式。
-#
-# ⚠️NOTICE: Do NOT add `on: schedule` cron triggers in forked repositories.
-# Forks may multiply scheduled runs and GitHub Actions resource usage is near limits.
-# Many scheduled workflows from forks can cause workflows to be disabled.
-# If scheduled execution is required, use other deployment methods.
-
 on:
-  workflow_dispatch:
+  schedule:
+    # 北京时间 18:00 (UTC 10:00)
+    - cron: '0 10 * * *'
+    # 北京时间 05:00 (UTC 21:00 of previous day)
+    - cron: '0 21 * * *'
+  workflow_dispatch:   # 保留手动触发按钮
 
 jobs:
   push:
-    runs-on: ${{ matrix.operating-system }}
-    strategy:
-      matrix:
-        operating-system: [ 'ubuntu-latest' ]
+    runs-on: ubuntu-latest
     steps:
       - name: Set branch name
         id: vars
         run: echo "BRANCH_NAME=main" >> $GITHUB_ENV
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ env.BRANCH_NAME }}
       - name: Run with setup-python 3.13
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.13'
           update-environment: true
@@ -35,16 +28,16 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
       - name: Install pipenv
         run: pip3 install --user pipenv
-      - name: Install dependecies
+      - name: Install dependencies
         run: pipenv --python 3.13 && pipenv install --deploy
       - name: Update
         run: pipenv run dev
-      - name: - name: Commit and push if changed
-  run: |
-    git config --local user.email "github-actions[bot]@users.noreply.github.com"
-    git config --local user.name "github-actions[bot]"
-    git add .
-    if ! git diff --staged --quiet; then
-      git commit -m "Github Action Auto Updated"
-      git push --force origin ${{ env.BRANCH_NAME }}
-    fi
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          if ! git diff --staged --quiet; then
+            git commit -m "Github Action Auto Updated"
+            git push --force origin ${{ env.BRANCH_NAME }}
+          fi
