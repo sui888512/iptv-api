@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Set branch name
         id: vars
-        run: echo "BRANCH_NAME=${{ github.repository_owner == 'Guovin' && 'gd' || 'master' }}" >> $GITHUB_ENV
+        run: echo "BRANCH_NAME=main" >> $GITHUB_ENV
       - uses: actions/checkout@v3
         with:
           ref: ${{ env.BRANCH_NAME }}
@@ -39,12 +39,12 @@ jobs:
         run: pipenv --python 3.13 && pipenv install --deploy
       - name: Update
         run: pipenv run dev
-      - name: Commit and push if changed
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          if ! git diff --staged --quiet; then
-            git commit -m "Github Action Auto Updated"
-            git push --force
-          fi
+      - name: - name: Commit and push if changed
+  run: |
+    git config --local user.email "github-actions[bot]@users.noreply.github.com"
+    git config --local user.name "github-actions[bot]"
+    git add .
+    if ! git diff --staged --quiet; then
+      git commit -m "Github Action Auto Updated"
+      git push --force origin ${{ env.BRANCH_NAME }}
+    fi
