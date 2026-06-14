@@ -1425,6 +1425,14 @@ https://hls-gateway.vpstv.net/streams/708925.m3u8
 https://cdn9.163189.xyz/smt3.1.1.php?id=Tvbentertainment
 #EXTINF:-1 tvg-id="185" tvg-name="星河台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星河台.png" group-title="🌊港·澳",星河台
 https://o11.163189.xyz/stream/live/tvbxh/
+#EXTINF:-1 tvg-id="185" tvg-name="星河台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星河台.png" group-title="🌊港·澳",星河台
+http://r.jdshipin.com/sXuuD
+#EXTINF:-1 tvg-id="185" tvg-name="星河台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星河台.png" group-title="🌊港·澳",星河台
+http://r.jdshipin.com/Voac4
+#EXTINF:-1 tvg-id="185" tvg-name="星河台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星河台.png" group-title="🌊港·澳",星河台
+http://cdn6.163189.xyz/163189/tvbxh
+#EXTINF:-1 tvg-id="185" tvg-name="星河台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星河台.png" group-title="🌊港·澳",星河台
+http://o11.163189.xyz/stream/live/tvbxh/
 #EXTINF:-1 tvg-id="186" tvg-name="翡翠剧集台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/翡翠剧集台.png" group-title="🌊港·澳",翡翠剧集台
 https://6.cdn.loc.cc/163189.php?id=tvbd
 #EXTINF:-1 tvg-id="187" tvg-name="星空卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星空卫视.png" group-title="🌊港·澳",星空卫视
@@ -1461,6 +1469,8 @@ http://r.jdshipin.com/vSJvl
 http://r.jdshipin.com/TcKr2
 #EXTINF:-1 tvg-id="191" tvg-name="ViuTV" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ViuTV.png" group-title="🌊港·澳",ViuTV
 http://smt.1678520.xyz/smt3.2.3.php?id=viu1_twn
+#EXTINF:-1 tvg-id="191" tvg-name="ViuTV" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ViuTV.png" group-title="🌊港·澳",ViuTV
+https://cdn10.163189.xyz/163189/viu/
 #EXTINF:-1 tvg-id="192" tvg-name="PopC电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/PopC电影.png" group-title="🌊港·澳",PopC电影
 http://tl.061833.xyz/tl/popc
 #EXTINF:-1 tvg-id="193" tvg-name="民视台湾台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/民视台湾台.png" group-title="🌊港·澳",民视台湾台
@@ -2039,5 +2049,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="350" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-14 07:09:09
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-14 20:46:22
 https://live.chinacert.cftest5.cn/cnmg/live/608807420

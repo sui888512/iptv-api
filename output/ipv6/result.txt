@@ -736,6 +736,10 @@ TVBS,https://www.judy.xx.kg/judy.php?id=4gtv-4gtv073
 TVBS,https://hls-gateway.vpstv.net/streams/708925.m3u8
 娱乐新闻台,https://cdn9.163189.xyz/smt3.1.1.php?id=Tvbentertainment
 星河台,https://o11.163189.xyz/stream/live/tvbxh/
+星河台,http://r.jdshipin.com/sXuuD
+星河台,http://r.jdshipin.com/Voac4
+星河台,http://cdn6.163189.xyz/163189/tvbxh
+星河台,http://o11.163189.xyz/stream/live/tvbxh/
 翡翠剧集台,https://6.cdn.loc.cc/163189.php?id=tvbd
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-12.m3u8
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-4.ctv
@@ -754,6 +758,7 @@ ViuTV,https://cdn.163189.xyz/163189/viu
 ViuTV,http://r.jdshipin.com/vSJvl
 ViuTV,http://r.jdshipin.com/TcKr2
 ViuTV,http://smt.1678520.xyz/smt3.2.3.php?id=viu1_twn
+ViuTV,https://cdn10.163189.xyz/163189/viu/
 PopC电影,http://tl.061833.xyz/tl/popc
 民视台湾台,https://smart.pendy.dpdns.org/Smart.php?id=ftvtaiwan_twn
 民视台湾台,https://hls-gateway.vpstv.net/streams/476244.m3u8
@@ -1055,4 +1060,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-14 07:09:09,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-14 20:46:22,https://live.chinacert.cftest5.cn/cnmg/live/608807420
