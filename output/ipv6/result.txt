@@ -862,6 +862,9 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 东森超视,https://stream1.freetv.fun/dong-sen-chao-shi-8.m3u8
 邵氏喜剧,https://stream1.freetv.fun/5b5db4070d49b6949aad5a643411dbcf20868919c31ec99f9881cc1e19f2eaa0.m3u8
 邵氏电影,https://stream1.freetv.fun/d8f66a980ecbfcf9ff9db3b098d87b06793378b6f0d84e28717bfb2da14c2124.m3u8
+搞笑天堂岛,https://www.goodiptv.club/douyu/6916081
+搞笑动漫大本营,https://www.goodiptv.club/douyu/9650181
+开心逛剧场,https://www.goodiptv.club/douyu/10329310
 美亚电影,https://cdn9.163189.xyz/smt3.1.1.php?id=meiyamovie_twn
 美亚电影,https://hls-gateway.vpstv.net/streams/709286.m3u8
 美亚电影,https://hls-gateway.vpstv.net/streams/708901.m3u8
@@ -869,6 +872,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 美亚电影,http://php.jdshipin.com/TVOD/iptv.php?id=meiya
 电影谍战,http://live.metshop.top/huya/21059585?cdn=alicdn
 电影谍战片,http://live.metshop.top/huya/21059587?cdn=alicdn
+电影黑匣子,https://www.goodiptv.club/douyu/8706652
 周星驰,https://www.goodiptv.club/huya/11342412
 刘德华,https://vd2.bdstatic.com/mda-pjkfx92jybywmm4j/720p/h264/1697888378863819752/mda-pjkfx92jybywmm4j.mp4
 周润发,https://live.ottiptv.cc/huya/11342387
@@ -920,6 +924,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 欢乐剧场,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010025/1.m3u8
 
 🪁动画频道,#genre#
+开心锤锤动漫,https://www.goodiptv.club/douyu/9018297
 卡酷动画,http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
 卡酷动画,https://zby.130519.xyz/PLTV/11/224/3221226019/index.m3u8
 卡酷动画,http://[2409:8087:1a15:10d1::33]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225654/index.m3u8
@@ -969,6 +974,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 中华小当家,http://cdn.jdshipin.com:8880/huya.php?id=11342413
 猫和老鼠,https://live.metshop.top/huya/11352879
 猫和老鼠,https://live.ottiptv.cc/huya/11352879
+猫和老鼠,http://cdn.jdshipin.com:8880/huya.php?id=11352879
 蜡笔小新,https://live.ottiptv.cc/bilibili/30837590
 哆啦A梦,https://live.ottiptv.cc/huya/11601963
 
@@ -979,6 +985,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 天龙八部,https://live.ottiptv.cc/huya/20985816
 天龙八部,https://live.ottiptv.cc/yy/1351814644
 天龙八部,http://cdn.jdshipin.com:8880/huya.php?id=20985816
+天龙八部,https://live.metshop.top/huya/20985816
 鹿鼎记,https://live.ottiptv.cc/yy/28265277
 西游记,https://live.ottiptv.cc/huya/26355861
 西游记,http://cdn.jdshipin.com:8880/huya.php?id=30080242
@@ -995,8 +1002,10 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 水浒传,https://live.ottiptv.cc/yy/1353873252
 射雕英雄传,https://live.ottiptv.cc/huya/23824164
 射雕英雄传,http://cdn.jdshipin.com:8880/huya.php?id=23824164
+射雕英雄传,https://live.metshop.top/huya/23824164
 封神榜,http://cdn.jdshipin.com:8880/huya.php?id=29465849
 封神榜,https://live.ottiptv.cc/huya/29465849
+封神榜,https://live.metshop.top/huya/29465849
 扫黄先锋,http://cdn.jdshipin.com:8880/huya.php?id=29465855
 扫黄先锋,https://live.metshop.top/huya/23903196
 鉴证实录,http://cdn.jdshipin.com:8880/huya.php?id=23903183
@@ -1063,4 +1072,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-16 00:25:09,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-16 07:46:32,https://live.chinacert.cftest5.cn/cnmg/live/608807420
