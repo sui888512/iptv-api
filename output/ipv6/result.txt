@@ -523,6 +523,7 @@ CETV-4,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8
 厦门卫视,https://epg.pw/stream/aa65dd411565991ace44f9e5934bd018fdd52122e052d471a363b6ee839e1079.ctv
 厦门卫视,http://ott.mobaibox.com/PLTV/3/224/3221226996/index.m3u8
 福州少儿,http://live.zohi.tv/video/s10001-fztv-4/index.m3u8
+龙岩公共,http://731200.xyz:9999/udp/239.255.40.160:8208
 龙岩新闻综合,http://731200.xyz:9999/udp/239.255.40.160:8208
 福建文体,http://www.731200.xyz:9999/rtp/239.255.40.155:8208
 福建文体,http://731200.xyz:9999/udp/239.255.40.155:8208
@@ -645,6 +646,7 @@ Plus综合,https://cdn9.163189.xyz/smt3.1.1.php?id=j2_twn
 无线新闻台,http://r.jdshipin.com/CkuBd
 无线新闻台,https://php.jdshipin.com:2096/TVOD/iptv.php?id=tvbxw
 无线高清翡翠台,https://cdn6.163189.xyz/163189/fct
+无线高清翡翠台,https://cdn6.163189.xyz/163189/fct4k
 无线华丽台,https://cdn6.163189.xyz/163189/hlfct
 无线功夫台,https://cdn6.163189.xyz/163189/yzwx
 无线星河台,https://cdn6.163189.xyz/163189/tvbxh
@@ -701,6 +703,7 @@ TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 澳视卫星,http://php.jdshipin.com:8880/TVOD/iptv.php?id=as
 澳门体育,https://cdn6.163189.xyz/163189/amty
 澳门体育,http://cdn6.163189.xyz/163189/amty
+澳门体育,http://cdn6.163189.xyz/163189/amty#http://115.190.252.60:20508/sports.php?id=amty
 澳门综艺,https://cdn6.163189.xyz/163189/amzy
 澳门综艺,http://cdn6.163189.xyz/163189/amzy
 澳门莲花,https://cdn6.163189.xyz/163189/amlh
@@ -735,12 +738,16 @@ TVBS,https://t.freetv.fun/live/tvbs-asia.m3u8
 TVBS,https://www.judy.xx.kg/judy.php?id=4gtv-4gtv073
 TVBS,https://hls-gateway.vpstv.net/streams/708925.m3u8
 娱乐新闻台,https://cdn9.163189.xyz/smt3.1.1.php?id=Tvbentertainment
+黄金华剧台,https://hls.163189.xyz/163189/71fb62ece10887e8
 星河台,https://o11.163189.xyz/stream/live/tvbxh/
 星河台,http://r.jdshipin.com/sXuuD
 星河台,http://r.jdshipin.com/Voac4
 星河台,http://cdn6.163189.xyz/163189/tvbxh
 星河台,http://o11.163189.xyz/stream/live/tvbxh/
 翡翠剧集台,https://6.cdn.loc.cc/163189.php?id=tvbd
+翡翠一台,https://mytv.cdn.loc.cc/o12.php?id=fct
+翡翠一台,http://cdn6.163189.xyz/163189/tvb1
+翡翠一台,https://6.cdn.loc.cc/163189.php?id=tvb1
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-12.m3u8
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-4.ctv
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-10.m3u8
@@ -759,15 +766,28 @@ ViuTV,http://r.jdshipin.com/vSJvl
 ViuTV,http://r.jdshipin.com/TcKr2
 ViuTV,http://smt.1678520.xyz/smt3.2.3.php?id=viu1_twn
 ViuTV,https://cdn10.163189.xyz/163189/viu/
+港台电视33,http://cdn6.163189.xyz/163189/cctv1
 PopC电影,http://tl.061833.xyz/tl/popc
+中天综合台,https://cdn.19891230.eu.org/api/Cti-K/index.m3u8
+中天娱乐台,https://cdn.19891230.eu.org/api/Cti-E/index.m3u8
+中天亚洲台,https://cdn.19891230.eu.org/api/Cti-I/index.m3u8
 民视台湾台,https://smart.pendy.dpdns.org/Smart.php?id=ftvtaiwan_twn
 民视台湾台,https://hls-gateway.vpstv.net/streams/476244.m3u8
 民视第一台,https://smart.pendy.dpdns.org/Smart.php?id=lunghuajingdian_twn
 民视第一台,https://hls-gateway.vpstv.net/streams/476243.m3u8
 民视影剧台,https://cdn12.178.indevs.in/163189/73d93f1c22fa91d7
+东森综合台,https://cdn.19891230.eu.org/api/ET-Variety-Channel/index.m3u8
+东森戏剧台,https://smt.1678520.xyz/163189/f60cd3f14b06dabc
+东森戏剧台,https://cdn.19891230.eu.org/api/ET-Drama-Channel/index.m3u8
+东森洋片台,https://smt.1678520.xyz/163189/cd69d6ff4e8217c7
+东森洋片台,https://cdn.19891230.eu.org/api/ET-Foreign-Movie-Channel/index.m3u8
 纬来戏剧台,https://smt.1678520.xyz/163189/ab657380c65c1fd1
+纬来戏剧台,https://cdn.19891230.eu.org/api/VL-Drama/index.m3u8
+纬来日本台,https://cdn.19891230.eu.org/api/VL-Japan/index.m3u8
 纬来体育台,https://smt.1678520.xyz/163189/b10b2645c6d9de2b
+纬来体育台,https://cdn.19891230.eu.org/api/VL-Sports/index.m3u8
 纬来电影台,https://smt.1678520.xyz/163189/602e9465658d4f8c
+纬来电影台,https://cdn.19891230.eu.org/api/VL-Movies/index.m3u8
 八大综合台,https://hls-gateway.vpstv.net/streams/477069.m3u8
 八大戏剧台,https://hls-gateway.vpstv.net/streams/488934.m3u8
 八大娱乐台,https://hls-gateway.vpstv.net/streams/477064.m3u8
@@ -781,6 +801,7 @@ PopC电影,http://tl.061833.xyz/tl/popc
 龙华电影台,http://cdn8.163189.xyz/163189/lhdy
 龙华电影台,https://cdn8.163189.xyz/163189/lhdy
 龙华戏剧台,http://cdn8.163189.xyz/163189/lhxj
+龙华戏剧台,https://cdn8.163189.xyz/163189/lhxj
 龙华经典台,http://cdn8.163189.xyz/163189/lhjd
 龙华经典台,https://cdn8.163189.xyz/163189/lhjd
 龙华偶像台,http://cdn8.163189.xyz/163189/lhox
@@ -788,6 +809,10 @@ PopC电影,http://tl.061833.xyz/tl/popc
 龙华日韩台,http://cdn8.163189.xyz/163189/lhrh
 龙华日韩台,https://cdn8.163189.xyz/163189/lhrh
 龙华洋片台,http://cdn8.163189.xyz/163189/lhyp
+龙华洋片台,https://cdn8.163189.xyz/163189/lhyp
+东森电影台,https://smt.1678520.xyz/163189/a2c09ea65fb10aa2
+东森电影台,https://cdn.19891230.eu.org/api/ET-Movie/index.m3u8
+好莱坞电影台,https://cdn.19891230.eu.org/api/Hollywood-Movie/index.m3u8
 HBO,https://hls-gateway.vpstv.net/streams/476278.m3u8
 HBO,https://hls-gateway.vpstv.net/streams/476974.m3u8
 HBO,https://hls-gateway.vpstv.net/streams/709103.m3u8
@@ -804,7 +829,10 @@ tvN,https://hls-gateway.vpstv.net/streams/477799.m3u8
 阿里郎电视台,https://dash3.antik.sk/live/test_arirang/playlist.m3u8
 天映经典台,https://o11.163189.xyz/stream/live/ccm/
 天映经典台,http://o11.163189.xyz/stream/live/ccm/
+五星体育台,https://cdn15.163189.xyz/163189/9c893bb003e1c7de
+龙华卡通台,https://cdn8.163189.xyz/163189/lhkt
 Animax,https://hls-gateway.vpstv.net/streams/709503.m3u8
+Animax,https://stream1.freetv.fun/animax-1.m3u8
 美食星球,https://hls-gateway.vpstv.net/streams/709110.m3u8
 美食星球,https://hls-gateway.vpstv.net/streams/476263.m3u8
 
@@ -814,6 +842,8 @@ Animax,https://hls-gateway.vpstv.net/streams/709503.m3u8
 金牌综艺,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/1000000004000026167/index.m3u8?channel-id=ystenlive&Contentid=1000000004000026167&livemode=1&stbId=YanG-1989
 欢乐集结号,https://live.ottiptv.cc/yy/1354931582
 欢乐集结号,https://live.ottiptv.cc/yy/1382735550
+笑傲江湖 第1季,https://live.ottiptv.cc/yy/1382749896
+笑傲江湖 第2季,https://live.ottiptv.cc/yy/1382736914
 NewTV金牌综艺,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225666/index.m3u8
 NewTV金牌综艺,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/1000000004000026167/index.m3u8?channel-id=ystenlive&Contentid=1000000004000026167&livemode=1&stbId=YanG-1989
 
@@ -875,11 +905,16 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 电影黑匣子,https://www.goodiptv.club/douyu/8706652
 周星驰,https://www.goodiptv.club/huya/11342412
 刘德华,https://vd2.bdstatic.com/mda-pjkfx92jybywmm4j/720p/h264/1697888378863819752/mda-pjkfx92jybywmm4j.mp4
+刘德华,https://live.ottiptv.cc/huya/11342424
+成龙,https://live.ottiptv.cc/huya/11342386
+林正英,https://live.ottiptv.cc/huya/11342421
 周润发,https://live.ottiptv.cc/huya/11342387
 五福星,https://live.metshop.top/huya/11282233
 五福星,https://www.goodiptv.club/huya/11282233
 古天乐,https://www.goodiptv.club/huya/11602041
+古天乐,https://live.ottiptv.cc/huya/29982675
 邱淑贞,https://live.metshop.top/huya/11352949
+王晶,https://live.ottiptv.cc/huya/11602058
 喜剧,https://www.goodiptv.club/huya/11352877
 港片,https://live.metshop.top/huya/11602043
 港片,https://www.goodiptv.club/huya/11602043
@@ -890,11 +925,17 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 枪战,https://www.goodiptv.club/huya/21059579
 热血,https://www.goodiptv.club/huya/11352934
 谍战,https://www.goodiptv.club/huya/21059585
+喜剧专场,https://live.ottiptv.cc/huya/11602044
 黑帮斗争,https://www.goodiptv.club/huya/11342419
 女神系列,https://live.metshop.top/huya/11336571
+女神系列,https://live.ottiptv.cc/huya/11336571
 经典女神,https://live.metshop.top/huya/11352909
 许氏三杰,https://www.goodiptv.club/huya/11602033
+许氏三杰,https://live.ottiptv.cc/huya/11602033
+超异能族,https://live.ottiptv.cc/huya/21059586
 古墓系列,https://live.metshop.top/huya/11352913
+动作电影,https://live.ottiptv.cc/huya/11602077
+国产悬疑,https://live.ottiptv.cc/huya/11342395
 赌片,https://live.metshop.top/huya/11342399
 科幻动作,https://live.metshop.top/huya/11352964
 国产喜剧,https://yylunbo.ottiptv.cc/yy/1382735584
@@ -909,6 +950,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 超级电视剧,http://[2409:8087:1a0b:df::4017]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
 超级电视剧,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
 超级电视剧,http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010065/1.m3u8
+超级电视剧,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225716/index.m3u8
 惊悚悬疑,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/1000000004000024282/index.m3u8?channel-id=ystenlive&Contentid=1000000004000024282&livemode=1&stbId=YanG-1989
 惊悚悬疑,http://php.jdshipin.com/TVOD/hnyd.php?id=200000001898/460000089800010077
 惊悚悬疑,http://[2409:8087:1a0b:df::4002]:80/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225665/index.m3u8
@@ -1072,4 +1114,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-16 07:46:32,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-16 23:42:35,https://live.chinacert.cftest5.cn/cnmg/live/608807420
