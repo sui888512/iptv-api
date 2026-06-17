@@ -1979,6 +1979,8 @@ http://cdn.jdshipin.com:8880/huya.php?id=11352879
 https://live.ottiptv.cc/bilibili/30837590
 #EXTINF:-1 tvg-id="318" tvg-name="哆啦A梦" tvg-logo="https://www.xn--rgv465a.top/tvlogo/哆啦A梦.png" group-title="🪁动画频道",哆啦A梦
 https://live.ottiptv.cc/huya/11601963
+#EXTINF:-1 tvg-id="318" tvg-name="哆啦A梦" tvg-logo="https://www.xn--rgv465a.top/tvlogo/哆啦A梦.png" group-title="🪁动画频道",哆啦A梦
+https://lbds.us.ci/11601963
 #EXTINF:-1 tvg-id="319" tvg-name="笑傲江湖" tvg-logo="https://www.xn--rgv465a.top/tvlogo/笑傲江湖.png" group-title="🏛经典剧场",笑傲江湖
 https://live.ottiptv.cc/huya/26355790
 #EXTINF:-1 tvg-id="319" tvg-name="笑傲江湖" tvg-logo="https://www.xn--rgv465a.top/tvlogo/笑傲江湖.png" group-title="🏛经典剧场",笑傲江湖
@@ -2053,6 +2055,8 @@ http://live.ottiptv.cc/huya/30080238
 https://live.ottiptv.cc/huya/11352940
 #EXTINF:-1 tvg-id="335" tvg-name="大宋提刑官" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大宋提刑官.png" group-title="🏛经典剧场",大宋提刑官
 http://live.ottiptv.cc/huya/26355856
+#EXTINF:-1 tvg-id="335" tvg-name="大宋提刑官" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大宋提刑官.png" group-title="🏛经典剧场",大宋提刑官
+https://lbds.us.ci/26355856
 #EXTINF:-1 tvg-id="336" tvg-name="地下交通站" tvg-logo="https://www.xn--rgv465a.top/tvlogo/地下交通站.png" group-title="🏛经典剧场",地下交通站
 https://live.ottiptv.cc/yy/1382736795
 #EXTINF:-1 tvg-id="337" tvg-name="士兵突击" tvg-logo="https://www.xn--rgv465a.top/tvlogo/士兵突击.png" group-title="🏛经典剧场",士兵突击
@@ -2159,5 +2163,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="379" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-17 07:32:47
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-17 22:14:09
 https://live.chinacert.cftest5.cn/cnmg/live/608807420

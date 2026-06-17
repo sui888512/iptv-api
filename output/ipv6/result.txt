@@ -1019,6 +1019,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 猫和老鼠,http://cdn.jdshipin.com:8880/huya.php?id=11352879
 蜡笔小新,https://live.ottiptv.cc/bilibili/30837590
 哆啦A梦,https://live.ottiptv.cc/huya/11601963
+哆啦A梦,https://lbds.us.ci/11601963
 
 🏛经典剧场,#genre#
 笑傲江湖,https://live.ottiptv.cc/huya/26355790
@@ -1058,6 +1059,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 亮剑,http://live.ottiptv.cc/huya/30080238
 康熙王朝,https://live.ottiptv.cc/huya/11352940
 大宋提刑官,http://live.ottiptv.cc/huya/26355856
+大宋提刑官,https://lbds.us.ci/26355856
 地下交通站,https://live.ottiptv.cc/yy/1382736795
 士兵突击,https://live.ottiptv.cc/huya/11342430
 雪豹,https://live.ottiptv.cc/huya/29580970
@@ -1115,4 +1117,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-17 07:32:47,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-17 22:14:09,https://live.chinacert.cftest5.cn/cnmg/live/608807420
