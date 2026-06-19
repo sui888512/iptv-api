@@ -1003,6 +1003,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 金鹰卡通,http://[2409:8087:1a0b:df::4008]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225653/index.m3u8
 金鹰卡通,https://zby.130519.xyz/PLTV/11/224/3221226094/index.m3u8
 金鹰卡通,https://stream1.freetv.fun/jin-ying-qia-tong-22.m3u8
+茶啊二中,https://www.goodiptv.club/huya/11213191
 炫动卡通,http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225657/index.m3u8
 炫动卡通,https://zby.130519.xyz/PLTV/11/224/3221226161/index.m3u8
 炫动卡通,https://zby.130519.xyz/PLTV/11/224/3221226175/index.m3u8
@@ -1130,4 +1131,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-19 22:28:21,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-20 06:37:01,https://live.chinacert.cftest5.cn/cnmg/live/608807420
