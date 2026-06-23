@@ -905,6 +905,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 东森超视,https://stream1.freetv.fun/dong-sen-chao-shi-8.m3u8
 邵氏喜剧,https://stream1.freetv.fun/5b5db4070d49b6949aad5a643411dbcf20868919c31ec99f9881cc1e19f2eaa0.m3u8
 邵氏电影,https://stream1.freetv.fun/d8f66a980ecbfcf9ff9db3b098d87b06793378b6f0d84e28717bfb2da14c2124.m3u8
+武侠剧场,https://www.goodiptv.club/douyu/9285904
 搞笑天堂岛,https://www.goodiptv.club/douyu/6916081
 搞笑动漫大本营,https://www.goodiptv.club/douyu/9650181
 开心逛剧场,https://www.goodiptv.club/douyu/10329310
@@ -1041,6 +1042,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 笑傲江湖,http://cdn.jdshipin.com:8880/huya.php?id=23865142
 笑傲江湖,https://live.metshop.top/huya/23865142
 笑傲江湖,https://live.metshop.top/huya/26355790
+笑傲江湖,http://cdn.jdshipin.com:8880/huya.php?id=26355790
 天龙八部,https://live.ottiptv.cc/huya/20985816
 天龙八部,https://live.ottiptv.cc/yy/1351814644
 天龙八部,http://cdn.jdshipin.com:8880/huya.php?id=20985816
@@ -1133,4 +1135,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-23 21:12:41,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-24 07:04:05,https://live.chinacert.cftest5.cn/cnmg/live/608807420
