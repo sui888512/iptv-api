@@ -1137,4 +1137,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-24 21:19:18,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-25 06:48:10,https://live.chinacert.cftest5.cn/cnmg/live/608807420
