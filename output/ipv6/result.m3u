@@ -1207,6 +1207,8 @@ http://o11.163189.xyz/stream/tvb/mzt/
 http://r.jdshipin.com/ZQ4kN
 #EXTINF:-1 tvg-id="145" tvg-name="Plus综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/Plus综合.png" group-title="🌊港·澳",Plus综合
 https://cdn9.163189.xyz/smt3.1.1.php?id=j2_twn
+#EXTINF:-1 tvg-id="145" tvg-name="Plus综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/Plus综合.png" group-title="🌊港·澳",Plus综合
+https://cdn6.163189.xyz/163189/tvbp
 #EXTINF:-1 tvg-id="146" tvg-name="凤凰中文" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰中文.png" group-title="🌊港·澳",凤凰中文
 https://cdn6.163189.xyz/163189/fhzw
 #EXTINF:-1 tvg-id="146" tvg-name="凤凰中文" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰中文.png" group-title="🌊港·澳",凤凰中文
@@ -1289,6 +1291,10 @@ http://php.jdshipin.com:8880/smt.php?id=pearl_twn
 https://cdn6.163189.xyz/163189/tvbxh
 #EXTINF:-1 tvg-id="157" tvg-name="无线星河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线星河.png" group-title="🌊港·澳",无线星河
 https://cdn9.163189.xyz/smt3.1.1.php?id=Xinhe
+#EXTINF:-1 tvg-id="157" tvg-name="无线星河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线星河.png" group-title="🌊港·澳",无线星河
+https://cdn10.163189.xyz/163189/xinghe/
+#EXTINF:-1 tvg-id="157" tvg-name="无线星河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线星河.png" group-title="🌊港·澳",无线星河
+https://o11.163189.xyz/stream/live/tvbxh/
 #EXTINF:-1 tvg-id="158" tvg-name="无线功夫" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线功夫.png" group-title="🌊港·澳",无线功夫
 https://cdn6.163189.xyz/163189/yzwx
 #EXTINF:-1 tvg-id="159" tvg-name="有线新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/有线新闻.png" group-title="🌊港·澳",有线新闻
@@ -1719,6 +1725,10 @@ https://cdn9.163189.xyz/smt3.1.1.php?id=Celestial2
 https://cdn6.163189.xyz/163189/tvbxh
 #EXTINF:-1 tvg-id="157" tvg-name="无线星河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线星河.png" group-title="🎬电影频道",无线星河
 https://cdn9.163189.xyz/smt3.1.1.php?id=Xinhe
+#EXTINF:-1 tvg-id="157" tvg-name="无线星河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线星河.png" group-title="🎬电影频道",无线星河
+https://cdn10.163189.xyz/163189/xinghe/
+#EXTINF:-1 tvg-id="157" tvg-name="无线星河" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线星河.png" group-title="🎬电影频道",无线星河
+https://o11.163189.xyz/stream/live/tvbxh/
 #EXTINF:-1 tvg-id="190" tvg-name="星空卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星空卫视.png" group-title="🎬电影频道",星空卫视
 https://stream1.freetv.fun/xing-kong-wei-shi-12.m3u8
 #EXTINF:-1 tvg-id="190" tvg-name="星空卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星空卫视.png" group-title="🎬电影频道",星空卫视
@@ -2203,5 +2213,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="381" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-25 21:06:35
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-26 06:50:33
 https://live.chinacert.cftest5.cn/cnmg/live/608807420
