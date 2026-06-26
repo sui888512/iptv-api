@@ -702,6 +702,7 @@ TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 龙华经典,http://cdn8.163189.xyz/163189/lhjd
 龙华经典,https://cdn8.163189.xyz/live/lhjd/stream.m3u8
 龙华经典,https://hls-gateway.vpstv.net/streams/476294.m3u8
+龙华经典,http://api.mytv666.top/api/hk.php?id=3065633761663630333461656536343531636333616636383031653138653532267469643d74762669643d313330
 凤凰卫视中文台,https://cdn6.163189.xyz/163189/fhzw
 凤凰卫视中文台,http://r.jdshipin.com/cCCzW
 凤凰卫视中文台,http://cdn6.163189.xyz/163189/fhzw
@@ -734,16 +735,19 @@ TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 龙华偶像,http://cdn8.163189.xyz/163189/lhox
 龙华偶像,https://cdn8.163189.xyz/live/lhox/stream.m3u8
 龙华偶像,https://hls-gateway.vpstv.net/streams/708930.m3u8
+龙华偶像,http://api.mytv666.top/api/hk.php?id=3333626561633566626266666436633135393564303031376437623464303066267469643d74762669643d313730
 龙华日韩,https://cdn8.163189.xyz/163189/lhrh
 龙华日韩,http://cdn8.163189.xyz/163189/lhrh
 龙华日韩,https://cdn8.163189.xyz/live/lhrh/stream.m3u8
 龙华日韩,https://hls-gateway.vpstv.net/streams/476231.m3u8
+龙华日韩,http://api.mytv666.top/api/hk.php?id=3736613333383334346630626430353238656638393462343032653335616630267469643d74762669643d313639
 CHU综合,https://cdn6.163189.xyz/163189/chu
 CH5综合,https://cdn6.163189.xyz/163189/ch5
 CH8综合,https://cdn6.163189.xyz/163189/ch8
 TVBJ1,https://hls-gateway.vpstv.net/streams/709490.m3u8
 TVBJ1,http://cdn3.163189.xyz/live/j1/stream.m3u8
 TVBJ1,https://hls-gateway.vpstv.net/streams/476199.m3u8
+TVBJ1,http://api.mytv666.top/api/qwt.php?t=香港频道&id=TVBJ1
 TVB Plus,https://tvb.go-iptv.ggff.net/stream/tvb/tvbplus/master.m3u8?u=caonima&p=17dff6b2f2f8765d17991c586cbb7ef9827a1dd4982e17b915453c457e4636ab
 TVB Plus,https://cdn6.163189.xyz/163189/tvbp
 TVB Plus,http://r.jdshipin.com/Nr5jq
@@ -771,6 +775,7 @@ TVBS,https://hls-gateway.vpstv.net/streams/708925.m3u8
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-11.m3u8
 Now新闻,http://cdn.163189.xyz/163189/now
 Now新闻,https://cdn.163189.xyz/163189/now
+Now财经,http://api.mytv666.top/api/qwt.php?t=香港频道&id=Now财经台
 HOY 77,https://cdn6.163189.xyz/163189/hoy
 HOY 77,http://cdn.163189.xyz/163189/hoy
 HOY 77,http://r.jdshipin.com/sFw4S
@@ -783,6 +788,9 @@ ViuTV,http://r.jdshipin.com/vSJvl
 ViuTV,http://r.jdshipin.com/TcKr2
 ViuTV,http://smt.1678520.xyz/smt3.2.3.php?id=viu1_twn
 ViuTV,https://cdn10.163189.xyz/163189/viu/
+ViuTV6,http://api.mytv666.top/api/hk.php?id=6236616335616166663361323639393232353665303837343333653131336466267469643d74762669643d3339
+ViuTV6,http://api.mytv666.top/api/hk.php?id=3331653464373833613333613463386134633164386334653838356561653135267469643d77696e74763132332669643d3239
+ViuTV6,http://api.mytv666.top/api/qwt.php?t=香港频道&id=ViuTV6
 港台电视33,http://cdn6.163189.xyz/163189/cctv1
 PopC电影,http://tl.061833.xyz/tl/popc
 中天综合台,https://cdn.19891230.eu.org/api/Cti-K/index.m3u8
@@ -811,6 +819,7 @@ PopC电影,http://tl.061833.xyz/tl/popc
 三立台湾台,https://hls-gateway.vpstv.net/streams/477050.m3u8
 三立都会台,https://hls-gateway.vpstv.net/streams/476232.m3u8
 靖天戏剧台,https://cdn12.178.indevs.in/163189/177d541552f78003
+东风卫视,http://api.mytv666.top/api/qwt.php?t=台湾频道&id=东风卫视
 大爱二台,https://hls-gateway.vpstv.net/streams/493133.m3u8
 客家电视台,https://hls-gateway.vpstv.net/streams/476229.m3u8
 人间卫视,https://hls-gateway.vpstv.net/streams/488957.m3u8
@@ -839,10 +848,13 @@ AXN,https://hls-gateway.vpstv.net/streams/709502.m3u8
 AXN,https://hls-gateway.vpstv.net/streams/476871.m3u8
 AXN,https://hls-gateway.vpstv.net/streams/602163.m3u8
 AXN,https://hls-gateway.vpstv.net/streams/477730.m3u8
+AXN,http://api.mytv666.top/api/qwt.php?t=影视频道&id=AXN
 韩国娱乐台,https://hls-gateway.vpstv.net/streams/708919.m3u8
 tvN,https://tvb.go-iptv.ggff.net/stream/tvb/tvn/master.m3u8?u=caonima&p=17dff6b2f2f8765d17991c586cbb7ef9827a1dd4982e17b915453c457e4636ab
 tvN,https://hls-gateway.vpstv.net/streams/709507.m3u8
 tvN,https://hls-gateway.vpstv.net/streams/477799.m3u8
+tvN,http://api.mytv666.top/api/qwt.php?t=影视频道&id=tvN
+tvN,http://api.mytv666.top/api/qwt.php?t=国外频道&id=tvN
 阿里郎电视台,https://dash3.antik.sk/live/test_arirang/playlist.m3u8
 天映经典台,https://o11.163189.xyz/stream/live/ccm/
 天映经典台,http://o11.163189.xyz/stream/live/ccm/
@@ -850,6 +862,8 @@ tvN,https://hls-gateway.vpstv.net/streams/477799.m3u8
 龙华卡通台,https://cdn8.163189.xyz/163189/lhkt
 Animax,https://hls-gateway.vpstv.net/streams/709503.m3u8
 Animax,https://stream1.freetv.fun/animax-1.m3u8
+Animax,http://api.mytv666.top/api/qwt.php?t=影视频道&id=Animax
+Animax,http://api.mytv666.top/api/qwt.php?t=国外频道&id=Animax
 美食星球,https://hls-gateway.vpstv.net/streams/709110.m3u8
 美食星球,https://hls-gateway.vpstv.net/streams/476263.m3u8
 
@@ -880,6 +894,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 纬来电影,https://hls-gateway.vpstv.net/streams/477063.m3u8
 纬来电影,https://smart.pendy.dpdns.org/Smart.php?id=videolandmovie
 纬来电影,https://t.freetv.fun/live/wei-lai-dian-ying.php
+纬来电影,http://api.mytv666.top/api/qwt.php?t=影视频道&id=纬来电影
 经典电影,https://stream1.freetv.fun/jing-dian-dian-ying-9.ctv
 经典电影,https://stream1.freetv.fun/jing-dian-dian-ying-8.ctv
 经典电影,https://stream1.freetv.fun/jing-dian-dian-ying-15.ctv
@@ -900,6 +915,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,https://stream1.freetv.fun/dong-sen-dian-ying-8.ctv
 龙祥电影,https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn
+龙祥电影,http://api.mytv666.top/api/qwt.php?t=香港频道&id=龙祥电影
 东森洋片,https://smt.1678520.xyz/163189/cd69d6ff4e8217c7
 东森洋片,https://stream1.freetv.fun/dong-sen-yang-pian-3.m3u8
 东森洋片,https://hls-gateway.vpstv.net/streams/476997.m3u8
@@ -1135,6 +1151,7 @@ TOKYO MX1,https://hls-gateway.vpstv.net/streams/709231.m3u8
 MBS毎日放送,https://hls-gateway.vpstv.net/streams/709225.m3u8
 テレビ大阪,https://hls-gateway.vpstv.net/streams/709228.m3u8
 Mnet,https://hls-gateway.vpstv.net/streams/709132.m3u8
+Mnet,http://api.mytv666.top/api/qwt.php?t=国外频道&id=Mnet
 ムービープラス,https://hls-gateway.vpstv.net/streams/709263.m3u8
 AT-X 2,https://neetball.net/live/neet3.m3u8
 旅チャンネル,https://hls-gateway.vpstv.net/streams/709254.m3u8
@@ -1142,4 +1159,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-26 21:00:13,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-27 06:41:24,https://live.chinacert.cftest5.cn/cnmg/live/608807420
