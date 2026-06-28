@@ -863,6 +863,7 @@ tvN,http://api.mytv666.top/api/qwt.php?t=国外频道&id=tvN
 阿里郎电视台,https://dash3.antik.sk/live/test_arirang/playlist.m3u8
 天映经典台,https://o11.163189.xyz/stream/live/ccm/
 天映经典台,http://o11.163189.xyz/stream/live/ccm/
+博斯高球台,https://iptv.852851.xyz/l/yFOZ6eYb7N3RqIcTuLzVXwpv1CdaOpaA9TEziswTMvANwIOncxKfJ_sKBE-8f6M6/index.m3u8
 五星体育台,https://cdn15.163189.xyz/163189/9c893bb003e1c7de
 龙华卡通台,https://cdn8.163189.xyz/163189/lhkt
 Animax,https://hls-gateway.vpstv.net/streams/709503.m3u8
@@ -1165,4 +1166,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-28 20:37:13,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-29 06:37:53,https://live.chinacert.cftest5.cn/cnmg/live/608807420
