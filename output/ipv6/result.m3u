@@ -531,6 +531,8 @@ http://r.jdshipin.com/sE5vO
 http://cdn2.163189.xyz/live/gdzj/stream.m3u8
 #EXTINF:-1 tvg-id="55" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️广东频道",广东珠江
 http://gxyd.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8?servicetype=2
+#EXTINF:-1 tvg-id="55" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️广东频道",广东珠江
+http://cdn2.163189.xyz/163189/gdzj
 #EXTINF:-1 tvg-id="56" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️广东频道",广东体育
 https://cdn2.163189.xyz/163189/gdty
 #EXTINF:-1 tvg-id="56" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="☘️广东频道",广东体育
@@ -1471,6 +1473,8 @@ https://www.judy.xx.kg/judy.php?id=4gtv-4gtv073
 https://hls-gateway.vpstv.net/streams/708925.m3u8
 #EXTINF:-1 tvg-id="185" tvg-name="娱乐新闻台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/娱乐新闻台.png" group-title="🌊港·澳",娱乐新闻台
 https://cdn9.163189.xyz/smt3.1.1.php?id=Tvbentertainment
+#EXTINF:-1 tvg-id="185" tvg-name="娱乐新闻台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/娱乐新闻台.png" group-title="🌊港·澳",娱乐新闻台
+http://cdn6.163189.xyz/163189/ylxw
 #EXTINF:-1 tvg-id="186" tvg-name="黄金华剧台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/黄金华剧台.png" group-title="🌊港·澳",黄金华剧台
 https://hls.163189.xyz/163189/71fb62ece10887e8
 #EXTINF:-1 tvg-id="187" tvg-name="星河台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星河台.png" group-title="🌊港·澳",星河台
@@ -1569,16 +1573,22 @@ https://cdn.19891230.eu.org/api/ET-Foreign-Movie-Channel/index.m3u8
 https://smt.1678520.xyz/163189/ab657380c65c1fd1
 #EXTINF:-1 tvg-id="208" tvg-name="纬来戏剧台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来戏剧台.png" group-title="🌊港·澳",纬来戏剧台
 https://cdn.19891230.eu.org/api/VL-Drama/index.m3u8
+#EXTINF:-1 tvg-id="208" tvg-name="纬来戏剧台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来戏剧台.png" group-title="🌊港·澳",纬来戏剧台
+https://smt.1678520.xyz/163189/wlxj
 #EXTINF:-1 tvg-id="209" tvg-name="纬来日本台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来日本台.png" group-title="🌊港·澳",纬来日本台
 https://cdn.19891230.eu.org/api/VL-Japan/index.m3u8
 #EXTINF:-1 tvg-id="210" tvg-name="纬来体育台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来体育台.png" group-title="🌊港·澳",纬来体育台
 https://smt.1678520.xyz/163189/b10b2645c6d9de2b
 #EXTINF:-1 tvg-id="210" tvg-name="纬来体育台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来体育台.png" group-title="🌊港·澳",纬来体育台
 https://cdn.19891230.eu.org/api/VL-Sports/index.m3u8
+#EXTINF:-1 tvg-id="210" tvg-name="纬来体育台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来体育台.png" group-title="🌊港·澳",纬来体育台
+https://smt.1678520.xyz/163189/wlty
 #EXTINF:-1 tvg-id="211" tvg-name="纬来电影台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来电影台.png" group-title="🌊港·澳",纬来电影台
 https://smt.1678520.xyz/163189/602e9465658d4f8c
 #EXTINF:-1 tvg-id="211" tvg-name="纬来电影台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来电影台.png" group-title="🌊港·澳",纬来电影台
 https://cdn.19891230.eu.org/api/VL-Movies/index.m3u8
+#EXTINF:-1 tvg-id="211" tvg-name="纬来电影台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/纬来电影台.png" group-title="🌊港·澳",纬来电影台
+https://smt.1678520.xyz/163189/wldy
 #EXTINF:-1 tvg-id="212" tvg-name="八大综合台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/八大综合台.png" group-title="🌊港·澳",八大综合台
 https://hls-gateway.vpstv.net/streams/477069.m3u8
 #EXTINF:-1 tvg-id="213" tvg-name="八大戏剧台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/八大戏剧台.png" group-title="🌊港·澳",八大戏剧台
@@ -1773,6 +1783,8 @@ https://smt.1678520.xyz/163189/a2c09ea65fb10aa2
 https://hls-gateway.vpstv.net/streams/476995.m3u8
 #EXTINF:-1 tvg-id="254" tvg-name="东森电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东森电影.png" group-title="🎬电影频道",东森电影
 https://stream1.freetv.fun/dong-sen-dian-ying-8.ctv
+#EXTINF:-1 tvg-id="254" tvg-name="东森电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东森电影.png" group-title="🎬电影频道",东森电影
+https://smt.1678520.xyz/163189/dsdy
 #EXTINF:-1 tvg-id="255" tvg-name="龙祥电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙祥电影.png" group-title="🎬电影频道",龙祥电影
 https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn
 #EXTINF:-1 tvg-id="255" tvg-name="龙祥电影" tvg-logo="https://www.xn--rgv465a.top/tvlogo/龙祥电影.png" group-title="🎬电影频道",龙祥电影
@@ -2247,5 +2259,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="384" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-28 06:34:13
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-06-28 20:37:13
 https://live.chinacert.cftest5.cn/cnmg/live/608807420

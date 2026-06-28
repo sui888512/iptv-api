@@ -269,6 +269,7 @@ CETV-4,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8
 广东珠江,http://r.jdshipin.com/sE5vO
 广东珠江,http://cdn2.163189.xyz/live/gdzj/stream.m3u8
 广东珠江,http://gxyd.484947.xyz/PLTV/77777777/224/3221225717/index.m3u8?servicetype=2
+广东珠江,http://cdn2.163189.xyz/163189/gdzj
 广东体育,https://cdn2.163189.xyz/163189/gdty
 广东体育,http://r.jdshipin.com/LiYdg
 广东体育,http://cdn2.163189.xyz/live/gdty/stream.m3u8
@@ -759,6 +760,7 @@ TVBS,https://t.freetv.fun/live/tvbs-asia.m3u8
 TVBS,https://www.judy.xx.kg/judy.php?id=4gtv-4gtv073
 TVBS,https://hls-gateway.vpstv.net/streams/708925.m3u8
 娱乐新闻台,https://cdn9.163189.xyz/smt3.1.1.php?id=Tvbentertainment
+娱乐新闻台,http://cdn6.163189.xyz/163189/ylxw
 黄金华剧台,https://hls.163189.xyz/163189/71fb62ece10887e8
 星河台,https://o11.163189.xyz/stream/live/tvbxh/
 星河台,http://r.jdshipin.com/sXuuD
@@ -808,11 +810,14 @@ PopC电影,http://tl.061833.xyz/tl/popc
 东森洋片台,https://cdn.19891230.eu.org/api/ET-Foreign-Movie-Channel/index.m3u8
 纬来戏剧台,https://smt.1678520.xyz/163189/ab657380c65c1fd1
 纬来戏剧台,https://cdn.19891230.eu.org/api/VL-Drama/index.m3u8
+纬来戏剧台,https://smt.1678520.xyz/163189/wlxj
 纬来日本台,https://cdn.19891230.eu.org/api/VL-Japan/index.m3u8
 纬来体育台,https://smt.1678520.xyz/163189/b10b2645c6d9de2b
 纬来体育台,https://cdn.19891230.eu.org/api/VL-Sports/index.m3u8
+纬来体育台,https://smt.1678520.xyz/163189/wlty
 纬来电影台,https://smt.1678520.xyz/163189/602e9465658d4f8c
 纬来电影台,https://cdn.19891230.eu.org/api/VL-Movies/index.m3u8
+纬来电影台,https://smt.1678520.xyz/163189/wldy
 八大综合台,https://hls-gateway.vpstv.net/streams/477069.m3u8
 八大戏剧台,https://hls-gateway.vpstv.net/streams/488934.m3u8
 八大娱乐台,https://hls-gateway.vpstv.net/streams/477064.m3u8
@@ -914,6 +919,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 东森电影,https://smt.1678520.xyz/163189/a2c09ea65fb10aa2
 东森电影,https://hls-gateway.vpstv.net/streams/476995.m3u8
 东森电影,https://stream1.freetv.fun/dong-sen-dian-ying-8.ctv
+东森电影,https://smt.1678520.xyz/163189/dsdy
 龙祥电影,https://smt.858.qzz.io/Smart.php?id=lungxiangtime_twn
 龙祥电影,http://api.mytv666.top/api/qwt.php?t=香港频道&id=龙祥电影
 东森洋片,https://smt.1678520.xyz/163189/cd69d6ff4e8217c7
@@ -1159,4 +1165,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-28 06:34:13,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-28 20:37:13,https://live.chinacert.cftest5.cn/cnmg/live/608807420
