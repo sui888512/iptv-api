@@ -812,6 +812,7 @@ PopC电影,http://tl.061833.xyz/tl/popc
 纬来戏剧台,https://cdn.19891230.eu.org/api/VL-Drama/index.m3u8
 纬来戏剧台,https://smt.1678520.xyz/163189/wlxj
 纬来日本台,https://cdn.19891230.eu.org/api/VL-Japan/index.m3u8
+纬来日本台,https://iptv.852851.xyz/l/KoBvOCQsWhYqqkSDo4dL2CmMUlkn68T1iRLkYg8Df7VcHk_dURBVttldXowoNlgB/index.m3u8
 纬来体育台,https://smt.1678520.xyz/163189/b10b2645c6d9de2b
 纬来体育台,https://cdn.19891230.eu.org/api/VL-Sports/index.m3u8
 纬来体育台,https://smt.1678520.xyz/163189/wlty
@@ -1166,4 +1167,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-06-29 06:37:53,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-06-29 22:39:51,https://live.chinacert.cftest5.cn/cnmg/live/608807420
