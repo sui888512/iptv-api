@@ -724,6 +724,8 @@ TVB娱乐新闻台,http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
 澳门体育,https://cdn6.163189.xyz/163189/amty
 澳门体育,http://cdn6.163189.xyz/163189/amty
 澳门体育,http://cdn6.163189.xyz/163189/amty#http://115.190.252.60:20508/sports.php?id=amty
+澳门体育,https://cdn.qd.je/163189.php?id=amty
+澳门体育,https://live.666666.zip/stream/77795881.m3u8
 澳门综艺,https://cdn6.163189.xyz/163189/amzy
 澳门综艺,http://cdn6.163189.xyz/163189/amzy
 澳门莲花,https://cdn6.163189.xyz/163189/amlh
@@ -1168,4 +1170,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-07-02 20:54:49,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-07-03 06:37:29,https://live.chinacert.cftest5.cn/cnmg/live/608807420

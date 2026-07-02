@@ -1401,6 +1401,10 @@ https://cdn6.163189.xyz/163189/amty
 http://cdn6.163189.xyz/163189/amty
 #EXTINF:-1 tvg-id="173" tvg-name="澳门体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门体育.png" group-title="🌊港·澳",澳门体育
 http://cdn6.163189.xyz/163189/amty#http://115.190.252.60:20508/sports.php?id=amty
+#EXTINF:-1 tvg-id="173" tvg-name="澳门体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门体育.png" group-title="🌊港·澳",澳门体育
+https://cdn.qd.je/163189.php?id=amty
+#EXTINF:-1 tvg-id="173" tvg-name="澳门体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门体育.png" group-title="🌊港·澳",澳门体育
+https://live.666666.zip/stream/77795881.m3u8
 #EXTINF:-1 tvg-id="174" tvg-name="澳门综艺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门综艺.png" group-title="🌊港·澳",澳门综艺
 https://cdn6.163189.xyz/163189/amzy
 #EXTINF:-1 tvg-id="174" tvg-name="澳门综艺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/澳门综艺.png" group-title="🌊港·澳",澳门综艺
@@ -2265,5 +2269,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="385" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-07-02 20:54:49
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-07-03 06:37:29
 https://live.chinacert.cftest5.cn/cnmg/live/608807420
