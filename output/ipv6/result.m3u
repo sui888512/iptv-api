@@ -521,6 +521,8 @@ http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/224/3221
 https://live.chinacert.cftest5.cn/cnmg/live/608917627
 #EXTINF:-1 tvg-id="53" tvg-name="大湾区卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png" group-title="📡卫视频道",大湾区卫视
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226442/index.m3u8
+#EXTINF:-1 tvg-id="53" tvg-name="大湾区卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png" group-title="📡卫视频道",大湾区卫视
+https://iptv.catvod.com/gdtv?id=51&t=1783306791&tk=PTOffa3dVoKGl4rJ5uRSE-31f2uadkOPGPYFd1msb00
 #EXTINF:-1 tvg-id="54" tvg-name="凤凰卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/凤凰卫视.png" group-title="📡卫视频道",凤凰卫视
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 #EXTINF:-1 tvg-id="55" tvg-name="广东珠江" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="☘️广东频道",广东珠江
@@ -549,6 +551,8 @@ https://hls-gateway.vpstv.net/streams/708873.m3u8
 https://stream1.freetv.fun/yan-dong-xin-wen-27.ctv
 #EXTINF:-1 tvg-id="57" tvg-name="广东新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东新闻.png" group-title="☘️广东频道",广东新闻
 https://stream1.freetv.fun/yan-dong-xin-wen-20.m3u8
+#EXTINF:-1 tvg-id="57" tvg-name="广东新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东新闻.png" group-title="☘️广东频道",广东新闻
+https://iptv.catvod.com/gdtv?id=45&t=1783306791&tk=nc2Ow_IUSBR-6Cd5MUkidIESxIfvLAuXiaj99a74ivE
 #EXTINF:-1 tvg-id="23" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="☘️广东频道",广东卫视
 https://live.chinacert.cftest5.cn/zgst/live/guangdong
 #EXTINF:-1 tvg-id="23" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="☘️广东频道",广东卫视
@@ -565,10 +569,14 @@ https://stream1.freetv.fun/yan-dong-min-sheng-9.ctv
 https://stream1.freetv.fun/yan-dong-min-sheng-35.ctv
 #EXTINF:-1 tvg-id="58" tvg-name="广东民生" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东民生.png" group-title="☘️广东频道",广东民生
 https://stream1.freetv.fun/yan-dong-min-sheng-16.ctv
+#EXTINF:-1 tvg-id="58" tvg-name="广东民生" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东民生.png" group-title="☘️广东频道",广东民生
+https://iptv.catvod.com/gdtv?id=48&t=1783306791&tk=-dd5q8cx-V6pIOZYld7RiBirc-Ycdcytq9pc2nkKkMM
 #EXTINF:-1 tvg-id="53" tvg-name="大湾区卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png" group-title="☘️广东频道",大湾区卫视
 https://live.chinacert.cftest5.cn/cnmg/live/608917627
 #EXTINF:-1 tvg-id="53" tvg-name="大湾区卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png" group-title="☘️广东频道",大湾区卫视
 http://[2409:8087:1a0b:df::4020]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226442/index.m3u8
+#EXTINF:-1 tvg-id="53" tvg-name="大湾区卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png" group-title="☘️广东频道",大湾区卫视
+https://iptv.catvod.com/gdtv?id=51&t=1783306791&tk=PTOffa3dVoKGl4rJ5uRSE-31f2uadkOPGPYFd1msb00
 #EXTINF:-1 tvg-id="59" tvg-name="广州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州综合.png" group-title="☘️广东频道",广州综合
 http://r.jdshipin.com/iR6Gq
 #EXTINF:-1 tvg-id="59" tvg-name="广州综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广州综合.png" group-title="☘️广东频道",广州综合
@@ -2269,5 +2277,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="385" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-07-06 06:40:36
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-07-06 22:31:41
 https://live.chinacert.cftest5.cn/cnmg/live/608807420
