@@ -24,7 +24,7 @@
 # https://gh-proxy.org/https://raw.githubusercontent.com/xiaolong-nihao/IPTV-api/refs/heads/master/output/zblove.txt
 # https://live.hacks.tools/tv/iptv4.txt
 # https://18592.kstore.space/TVBox/tvzb.txt
-https://gh-proxy.com/https://raw.githubusercontent.com/tianze889/vbd/refs/heads/main/gatw0417.txt
+# https://raw.githubusercontent.com/tianze889/vbd/refs/heads/main/zbdsj0515.txt
 https://ghfast.top/https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/zubo_all.txt
 https://bitbucket.org/guot55/bhmb/raw/66cbebc3b012fd4f86a607ccc78428ef3fd776a9/TVBoxOSC/ysp.txt
 https://ghfast.top/https://raw.githubusercontent.com/qingtingjjjjjjj/iptv-auto-update/refs/heads/main/my.txt
@@ -51,7 +51,7 @@ https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/others_output.
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
 https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u
 
-# https://raw.githubusercontent.com/tianze889/vbd/refs/heads/main/zbdsj0515.txt
+# https://gh-proxy.com/https://raw.githubusercontent.com/tianze889/vbd/refs/heads/main/gatw0417.txt
 
 [WHITELIST]
 # 以下是订阅源的白名单，白名单内的订阅源获取的接口将不会参与测速，始终保留至结果最前。
