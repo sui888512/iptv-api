@@ -400,9 +400,11 @@ CETV-4,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225783/index.m3u8
 上海新闻综合,https://iptv.catvod.com/migu?id=651632657&token=90172a7b438bda6f907df8d2b75b6193
 上海新闻综合,https://iptv.catvod.com/migu?id=651632657&token=6ae14c419f6a0254b2b101892a90c635
 上海新闻综合,https://iptv.catvod.com/migu?id=651632657&token=a59887c626a6d7b772681b9b26f64894
+上海新闻综合,https://iptv.catvod.com/migu?id=651632657&token=2fe337c91efcf705f5d8713f3f4e6167
 上海第一财经,https://iptv.catvod.com/migu?id=608780988&token=c9421e5e2fa5c44d5ef2139cb67d5381
 上海第一财经,https://iptv.catvod.com/migu?id=608780988&token=96a8eeaa72652f08951b42ae75dca63c
 上海第一财经,https://iptv.catvod.com/migu?id=608780988&token=16beb036810391f4e2e0efa4698565bf
+上海第一财经,https://iptv.catvod.com/migu?id=608780988&token=49f96d233455b7a7b943f7d1d28a5e42
 上海纪实,http://iptv.huuc.edu.cn/hls/docuchina.m3u8
 上海纪实,https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-2.m3u8
 上海纪实,https://stream1.freetv.fun/ipv6-shang-hai-ji-shi-ren-wen-3.m3u8
@@ -1061,6 +1063,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 新动漫,https://iptv.catvod.com/migu?id=961930269&token=4dc4bfaa5bdb74c05d454ff4290b43bd
 新动漫,https://iptv.catvod.com/migu?id=961930269&token=ac3d766cc20b8ba0e73fed57a9064232
 新动漫,https://iptv.catvod.com/migu?id=961930269&token=654faef0f387bbcc55d942a4e97f833b
+新动漫,https://iptv.catvod.com/migu?id=961930269&token=41def6dc14f8576c38c7e7ae00f0f748
 爱动漫,http://php.jdshipin.com:8880/itv6s.php?cid=wasusyt&id=6000000006000280630
 爱动漫,http://[2409:8087:5e08:24::17]:6610/000000001000/2000000004000000059/index.m3u8
 爱动漫,http://[2409:8087:5e08:24::11]:6610/000000001000/2000000004000000059/index.m3u8
@@ -1206,4 +1209,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-07-27 06:22:58,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-07-27 21:22:31,https://live.chinacert.cftest5.cn/cnmg/live/608807420
