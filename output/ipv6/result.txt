@@ -739,6 +739,7 @@ TVB娱乐新闻台,https://cdn.qd.je/163189/ylxw
 凤凰卫视中文台,https://smt2.1678520.xyz/smt3.2.1.php?id=phoenixtv_hd
 凤凰卫视中文台,https://cdn9.163189.xyz/smt3.1.1.php?id=phoenixtv_hd
 民视台湾,https://stream1.freetv.fun/min-shi-tai-wan-6.ctv
+民视台湾,http://4gtv.cnlive.club/channel/nce5d867/index.m3u8?q=1782639885837
 澳视澳门,https://cdn6.163189.xyz/163189/asam
 澳视澳门,http://r.jdshipin.com/n2YZI
 澳视澳门,http://cdn6.163189.xyz/163189/asam
@@ -757,6 +758,7 @@ TVB娱乐新闻台,https://cdn.qd.je/163189/ylxw
 澳门综艺,https://cdn6.163189.xyz/163189/amzy
 澳门综艺,http://cdn6.163189.xyz/163189/amzy
 澳门综艺,https://cdn.qd.je/163189/amzy
+澳门综艺,https://cdn6.123.rr.kg/163189/amzy
 澳门莲花,https://cdn6.163189.xyz/163189/amlh
 澳门莲花,http://live-hls.macaulotustv.com/lotustv/macaulotustv.m3u8
 澳门莲花,http://cdn6.163189.xyz/163189/amlh
@@ -1213,4 +1215,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-08-13 06:21:40,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-08-13 19:48:07,https://live.chinacert.cftest5.cn/cnmg/live/608807420
