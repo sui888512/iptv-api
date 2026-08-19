@@ -1149,7 +1149,9 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 扫黄先锋,http://cdn.jdshipin.com:8880/huya.php?id=29465855
 扫黄先锋,https://live.metshop.top/huya/23903196
 扫黄先锋,https://lbds.us.ci/29465855
+扫黄先锋,https://live.metshop.top/huya/29465855
 鉴证实录,http://cdn.jdshipin.com:8880/huya.php?id=23903183
+鉴证实录,https://live.metshop.top/huya/23903183
 芈月传,https://live.ottiptv.cc/huya/11352975
 读心神探,https://live.ottiptv.cc/yy/1382736875
 亮剑,https://live.ottiptv.cc/huya/30080238
@@ -1215,4 +1217,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-08-19 05:50:12,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-08-19 19:24:09,https://live.chinacert.cftest5.cn/cnmg/live/608807420
