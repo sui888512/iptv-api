@@ -700,6 +700,7 @@ Plus综合,https://cdn6.163189.xyz/163189/tvbp
 无线星河,https://cdn9.163189.xyz/smt3.1.1.php?id=Xinhe
 无线星河,https://cdn10.163189.xyz/163189/xinghe/
 无线星河,https://o11.163189.xyz/stream/live/tvbxh/
+无线星河,http://r.jdshipin.com/sXuuD
 无线功夫,https://cdn6.163189.xyz/163189/yzwx
 有线新闻,https://cdn.163189.xyz/163189/hoy78
 有线新闻,https://stream1.freetv.fun/you-xian-xin-wen-1.m3u8
@@ -957,6 +958,7 @@ NewTV惊悚悬疑,http://[2409:8087:2001:20:2800:0:df6e:eb18]/wh7f454c46tw248277
 无线星河,https://cdn9.163189.xyz/smt3.1.1.php?id=Xinhe
 无线星河,https://cdn10.163189.xyz/163189/xinghe/
 无线星河,https://o11.163189.xyz/stream/live/tvbxh/
+无线星河,http://r.jdshipin.com/sXuuD
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-12.m3u8
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-4.ctv
 星空卫视,https://stream1.freetv.fun/xing-kong-wei-shi-10.m3u8
@@ -1217,4 +1219,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-08-28 13:27:36,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-08-29 05:25:37,https://live.chinacert.cftest5.cn/cnmg/live/608807420
