@@ -760,6 +760,7 @@ TVB娱乐新闻台,https://cdn.qd.je/163189/ylxw
 澳门综艺,http://cdn6.163189.xyz/163189/amzy
 澳门综艺,https://cdn.qd.je/163189/amzy
 澳门综艺,https://cdn6.123.rr.kg/163189/amzy
+澳门综艺,https://cdn6.cc.cd/163189/amzy
 澳门莲花,https://cdn6.163189.xyz/163189/amlh
 澳门莲花,http://live-hls.macaulotustv.com/lotustv/macaulotustv.m3u8
 澳门莲花,http://cdn6.163189.xyz/163189/amlh
@@ -1219,4 +1220,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-09-04 07:28:05,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-09-04 22:26:18,https://live.chinacert.cftest5.cn/cnmg/live/608807420
