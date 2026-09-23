@@ -989,6 +989,7 @@ PopC电影,http://tl.061833.xyz/tl/popc
 高点综合台,https://hls-gateway.vpstv.net/streams/709645.m3u8
 霹雳台湾台,https://hls-gateway.vpstv.net/streams/488941.m3u8
 大爱一台,https://7612-5516-affc-d88b.kylintv.tv/live/daai_iphone.m3u8
+大爱一台,https://www.youtube.com/watch?v=pM-1ytfQhos
 大爱二台,https://hls-gateway.vpstv.net/streams/493133.m3u8
 客家电视台,https://hls-gateway.vpstv.net/streams/476229.m3u8
 人间卫视,https://hls-gateway.vpstv.net/streams/488957.m3u8
@@ -1378,4 +1379,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-09-23 08:00:12,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-09-24 07:50:28,https://live.chinacert.cftest5.cn/cnmg/live/608807420

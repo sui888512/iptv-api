@@ -1931,6 +1931,8 @@ https://hls-gateway.vpstv.net/streams/709645.m3u8
 https://hls-gateway.vpstv.net/streams/488941.m3u8
 #EXTINF:-1 tvg-id="249" tvg-name="大爱一台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大爱一台.png" group-title="🌊港·澳",大爱一台
 https://7612-5516-affc-d88b.kylintv.tv/live/daai_iphone.m3u8
+#EXTINF:-1 tvg-id="249" tvg-name="大爱一台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大爱一台.png" group-title="🌊港·澳",大爱一台
+https://www.youtube.com/watch?v=pM-1ytfQhos
 #EXTINF:-1 tvg-id="250" tvg-name="大爱二台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/大爱二台.png" group-title="🌊港·澳",大爱二台
 https://hls-gateway.vpstv.net/streams/493133.m3u8
 #EXTINF:-1 tvg-id="251" tvg-name="客家电视台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/客家电视台.png" group-title="🌊港·澳",客家电视台
@@ -2685,5 +2687,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="423" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-09-23 08:00:12
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-09-24 07:50:28
 https://live.chinacert.cftest5.cn/cnmg/live/608807420
