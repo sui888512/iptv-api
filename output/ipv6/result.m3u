@@ -1915,6 +1915,8 @@ https://hls-gateway.vpstv.net/streams/476253.m3u8
 https://cdn12.178.indevs.in/163189/177d541552f78003
 #EXTINF:-1 tvg-id="243" tvg-name="靖天戏剧台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天戏剧台.png" group-title="🌊港·澳",靖天戏剧台
 https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv058&token=https://t.me/GPT_858
+#EXTINF:-1 tvg-id="243" tvg-name="靖天戏剧台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天戏剧台.png" group-title="🌊港·澳",靖天戏剧台
+http://breezy-audrie-zspace-7524863c.koyeb.app/vipsir?token=leifeng&id=4gtv-4gtv058
 #EXTINF:-1 tvg-id="244" tvg-name="靖天卡通台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天卡通台.png" group-title="🌊港·澳",靖天卡通台
 https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv044&token=https://t.me/GPT_858
 #EXTINF:-1 tvg-id="244" tvg-name="靖天卡通台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天卡通台.png" group-title="🌊港·澳",靖天卡通台
@@ -2689,5 +2691,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="423" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-06 09:49:16
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-07 01:47:58
 https://live.chinacert.cftest5.cn/cnmg/live/608807420
