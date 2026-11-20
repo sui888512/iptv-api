@@ -2077,6 +2077,10 @@ http://[2409:8087:5e00:24::2d]:6610/000000001000/1/1000000004000026167/index.m3u
 https://live.ottiptv.cc/yy/1354931582
 #EXTINF:-1 tvg-id="276" tvg-name="欢乐集结号" tvg-logo="https://www.xn--rgv465a.top/tvlogo/欢乐集结号.png" group-title="综艺频道",欢乐集结号
 https://live.ottiptv.cc/yy/1382735550
+#EXTINF:-1 tvg-id="276" tvg-name="欢乐集结号" tvg-logo="https://www.xn--rgv465a.top/tvlogo/欢乐集结号.png" group-title="综艺频道",欢乐集结号
+https://mursor.ottiptv.cc/yy/1354931582
+#EXTINF:-1 tvg-id="276" tvg-name="欢乐集结号" tvg-logo="https://www.xn--rgv465a.top/tvlogo/欢乐集结号.png" group-title="综艺频道",欢乐集结号
+https://mursor.ottiptv.cc/yy/1382735550
 #EXTINF:-1 tvg-id="277" tvg-name="笑傲江湖 第1季" tvg-logo="https://www.xn--rgv465a.top/tvlogo/笑傲江湖 第1季.png" group-title="综艺频道",笑傲江湖 第1季
 https://live.ottiptv.cc/yy/1382749896
 #EXTINF:-1 tvg-id="278" tvg-name="笑傲江湖 第2季" tvg-logo="https://www.xn--rgv465a.top/tvlogo/笑傲江湖 第2季.png" group-title="综艺频道",笑傲江湖 第2季
@@ -2593,6 +2597,8 @@ https://live.ottiptv.cc/huya/11342396
 https://live.ottiptv.cc/yy/1382781415
 #EXTINF:-1 tvg-id="385" tvg-name="风筝" tvg-logo="https://www.xn--rgv465a.top/tvlogo/风筝.png" group-title="🏛经典剧场",风筝
 https://live.ottiptv.cc/yy/1382828770
+#EXTINF:-1 tvg-id="385" tvg-name="风筝" tvg-logo="https://www.xn--rgv465a.top/tvlogo/风筝.png" group-title="🏛经典剧场",风筝
+https://mursor.ottiptv.cc/yy/1354931585
 #EXTINF:-1 tvg-id="386" tvg-name="古装神剧" tvg-logo="https://www.xn--rgv465a.top/tvlogo/古装神剧.png" group-title="🏛经典剧场",古装神剧
 https://live.metshop.top/douyu/338759
 #EXTINF:-1 tvg-id="387" tvg-name="フジテレビ" tvg-logo="https://www.xn--rgv465a.top/tvlogo/フジテレビ.png" group-title="日本频道",フジテレビ
@@ -2691,5 +2697,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="423" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-20 10:26:29
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-21 02:52:38
 https://live.chinacert.cftest5.cn/cnmg/live/608807420

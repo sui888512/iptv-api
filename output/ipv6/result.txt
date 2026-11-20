@@ -1064,6 +1064,8 @@ Animax,http://api.mytv666.top/api/qwt.php?t=国外频道&id=Animax
 金牌综艺,http://[2409:8087:5e00:24::2d]:6610/000000001000/1/1000000004000026167/index.m3u8?channel-id=ystenlive&Contentid=1000000004000026167&livemode=1&stbId=YanG-1989
 欢乐集结号,https://live.ottiptv.cc/yy/1354931582
 欢乐集结号,https://live.ottiptv.cc/yy/1382735550
+欢乐集结号,https://mursor.ottiptv.cc/yy/1354931582
+欢乐集结号,https://mursor.ottiptv.cc/yy/1382735550
 笑傲江湖 第1季,https://live.ottiptv.cc/yy/1382749896
 笑傲江湖 第2季,https://live.ottiptv.cc/yy/1382736914
 NewTV超级综艺,http://[2409:8087:7000:20::f]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226009/index.m3u8
@@ -1328,6 +1330,7 @@ CN卡通,https://stream1.freetv.fun/cnqia-tong-3.ctv
 铁齿铜牙纪晓岚,https://live.ottiptv.cc/huya/11342396
 铁齿铜牙纪晓岚,https://live.ottiptv.cc/yy/1382781415
 风筝,https://live.ottiptv.cc/yy/1382828770
+风筝,https://mursor.ottiptv.cc/yy/1354931585
 古装神剧,https://live.metshop.top/douyu/338759
 
 日本频道,#genre#
@@ -1381,4 +1384,4 @@ Cartoon Network,https://hls-gateway.vpstv.net/streams/709450.m3u8
 ウェザーニュース,https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
 
 🕘️更新时间,#genre#
-2026-11-20 10:26:29,https://live.chinacert.cftest5.cn/cnmg/live/608807420
+2026-11-21 02:52:38,https://live.chinacert.cftest5.cn/cnmg/live/608807420
