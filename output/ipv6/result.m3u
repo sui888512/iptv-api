@@ -1933,6 +1933,8 @@ https://stream1.freetv.fun/san-li-tai-wan-1.ctv
 https://hls-gateway.vpstv.net/streams/477050.m3u8
 #EXTINF:-1 tvg-id="240" tvg-name="三立都会台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三立都会台.png" group-title="🌊港·澳",三立都会台
 https://hls-gateway.vpstv.net/streams/476232.m3u8
+#EXTINF:-1 tvg-id="240" tvg-name="三立都会台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/三立都会台.png" group-title="🌊港·澳",三立都会台
+https://epg.pw/stream/88146d531cab5a517d5e756a2bb39e9b362c87716cc0adf1debc1cb97b3996e9.m3u8
 #EXTINF:-1 tvg-id="241" tvg-name="靖天综合台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天综合台.png" group-title="🌊港·澳",靖天综合台
 https://litv.tzh911.qzz.io/litv.php?id=4gtv-4gtv046&token=https://t.me/GPT_858
 #EXTINF:-1 tvg-id="241" tvg-name="靖天综合台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/靖天综合台.png" group-title="🌊港·澳",靖天综合台
@@ -2589,6 +2591,8 @@ http://cdn.jdshipin.com:8880/huya.php?id=11602081
 https://live.ottiptv.cc/yy/1351755386
 #EXTINF:-1 tvg-id="369" tvg-name="狄仁杰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/狄仁杰.png" group-title="🏛经典剧场",狄仁杰
 https://mursor.ottiptv.cc/yy/1351755386
+#EXTINF:-1 tvg-id="369" tvg-name="狄仁杰" tvg-logo="https://www.xn--rgv465a.top/tvlogo/狄仁杰.png" group-title="🏛经典剧场",狄仁杰
+https://yahu.445569.xyz/live/11352958
 #EXTINF:-1 tvg-id="370" tvg-name="水浒传" tvg-logo="https://www.xn--rgv465a.top/tvlogo/水浒传.png" group-title="🏛经典剧场",水浒传
 http://www.clmy.cc:35455/yy/1353873252
 #EXTINF:-1 tvg-id="370" tvg-name="水浒传" tvg-logo="https://www.xn--rgv465a.top/tvlogo/水浒传.png" group-title="🏛经典剧场",水浒传
@@ -2767,5 +2771,5 @@ https://hls-gateway.vpstv.net/streams/709254.m3u8
 https://hls-gateway.vpstv.net/streams/709450.m3u8
 #EXTINF:-1 tvg-id="423" tvg-name="ウェザーニュース" tvg-logo="https://www.xn--rgv465a.top/tvlogo/ウェザーニュース.png" group-title="日本频道",ウェザーニュース
 https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3audio-only=false).m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-26 11:50:20
+#EXTINF:-1 tvg-id="1" tvg-name="CCTV-1" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="🕘️更新时间",2026-11-27 03:58:40
 https://live.chinacert.cftest5.cn/cnmg/live/608807420
